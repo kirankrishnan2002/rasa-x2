@@ -1,0 +1,318 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- inform:
+    use_entities: true
+- leader_email:
+    use_entities: true
+- module_leader:
+    use_entities: true
+- module_name:
+    use_entities: true
+- credits:
+    use_entities: true
+- assg:
+    use_entities: true
+- assg_weight:
+    use_entities: true
+- faq:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: []
+- affirm:
+    use_entities: []
+- deny:
+    use_entities: []
+- mood_great:
+    use_entities: []
+- mood_unhappy:
+    use_entities: []
+- bot_challenge:
+    use_entities: []
+- module_code:
+    use_entities: true
+- nlu_fallback:
+    use_entities: []
+- ovr_prog_leader:
+    use_entities: []
+- EXTERNAL_reminder:
+    use_entities: []
+- game:
+    use_entities: []
+entities:
+- leader_email
+- module_code
+- module_leader
+- module_name
+# - credits
+# - assg
+slots:
+  db_id:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  module_level:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  module_code:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  module_name:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  module_leader:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  leader_email:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  credits:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  assg:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  assg_weight:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  lecture_slots:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  session_change:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  question:
+    type: any
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  dq_type:
+    type: any
+    initial_value: null
+    auto_fill: false
+    influence_conversation: false
+responses:
+  utter_greet:
+  - text: Hey! This is AI bot, I can help you with your school related questions?
+  utter_cheer_up:
+  - image: https://i.imgur.com/nGF1K8f.jpg
+    text: 'Here is something to cheer you up:'
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great, carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_iamabot:
+  - text: I am a bot.
+  utter_submit:
+  - text: All done!
+  utter_slots_values:
+  - text: |-
+      Recorded slots:
+       - Module name: {module_name}
+  utter_ask_module_name:
+  - text: What is the name of the module?
+  - text: Which module do you want to query?
+  utter_ask_module_level:
+  - text: What is the module level
+  utter_ask_module_code:
+  - text: What is the module code
+  utter_ask_module_leader:
+  - text: What is the module leader
+  utter_ask_leader_email:
+  - text: What is the leader email
+  utter_ask_credits:
+  - text: What is the credits
+  utter_ask_assg:
+  - text: What is the assg
+  utter_ask_assg_weight:
+  - text: What is the assg weight
+  utter_module_code:
+  - text: The code of {module_name} is {module_code}.
+  utter_module_name:
+  - text: '{module_leader} teaches {module_name}.'
+  utter_module_leader:
+  - text: The name of {module_name} leader is {module_leader}.
+  utter_leader_email:
+  - text: The email of {module_leader} is {leader_email}.
+  utter_faq/lecture_slots:
+  - text: Please see your personal timetable for the lecture slots for each module. Your timetable will be located on the Timetable icon on the dashboard of the studynet page. Any changes made to your timetable will be announced by your module leader .
+  utter_faq/session_change:
+  - text: No you cannot change your tutorial slot unless you have exceptional circumstances.
+  utter_faq/timetable_change:
+  - text: The timetable has been designed with your academic requirements in mind.We do however understand students have varying personal needs. If you have a specific problem with your timetable there may be circumstances in which amendments could be considered. Please be aware that changes between groups will only be possible where there is capacity.
+  utter_faq/timetable_empty:
+  - text: You may not see a complete timetable until you are fully registered and enrolled on all of your modules. You can check your registration status and which modules you are enrolled on in your Student Portal.
+  utter_faq/timetable_room_change:
+  - text: If a change to your academic timetable happens at short notice (within 48 hours of the activity) we will send a notification to your mobile device. For details see Timetable Change Notification Service.
+  utter_faq/tutorial_group_incorrect:
+  - text: Tutorial and workshop groups within modules are still being finalised for 2022-2023 and will be confirmed shortly.  Please check your timetable daily for updates.
+  utter_faq/map_of_rooms:
+  - text: You will find maps of campus and signage indicating room locations throughout both campuses. We recommend using the wayfinding feature on the Herts Mobile app to find your way around campus and get directions to any building or room. You will need to enter your starting location as well as your destination to generate a route.
+  utter_faq/overview_of_main_assessments:
+  - text: Please see the module handbook for each module. It will give you a clear outline of the main assessments of the module and the weightings of each assignment.
+  utter_faq/final_assessement:
+  - text: The date of the final assessment will be shown on the Canvas module page or in the Assignments tab. It will also be in the Module Handbook.
+  utter_faq/assignment_due:
+  - text: Please see your personal canvas page for the due dates of each assignment and further details of the assignment brief.
+  utter_faq/assignment_late:
+  - text: Your overall mark for that specific assignment will be reduced by 10% for every day that the assignment is submitted late.
+  utter_faq/assignment_extension:
+  - text: |-
+      A coursework extension is permission to hand in an assessment after the published deadline without either incurring a penalty or waiting to re-take an alternative assessment as a referred or deferred student.
+       In order to apply for a short term extension by completing the Short Term Extension Form which should be available on module pages and then email it to the module leader. Your module leader will then confirm if the extension has been granted or declined.
+  utter_faq/exceptional_circumstances:
+  - text: First see the guidance on the programme website on what reasons are applicable for exceptional circumstances. Then please fill in the exceptional circumstances form with relevant supporting evidence.
+  utter_faq/studyneeds_agreement:
+  - text: Please contact Student Wellbeing at the University to discuss your personal needs. Please ensure that you have the relevant supporting medical evidence.
+  utter_faq/referal_in_module:
+  - text: You will be eligible if you have achieved less than 40% overall in a module. You will  receive relevant correspondence from your module leader on when the deferral period is and the assignments that need to be completed.
+  utter_faq/deferral_for_module:
+  - text: You can see whether you are eligible to retake a module on your Student Record. It will have the code FREN written next to the module.
+  utter_faq/student_record:
+  - text: Once logged in to Studynet, then press the icon then press icon that looks like a grid and select student record. Once you have selected Student Record, login with your username and password. This is the same username and password that you use to login to Studynet.
+  utter_faq/extenuating_circumstances:
+  - text: You can speak to your pesonal tutor, module tutor or the prorgamme leader.
+  utter_faq/cant_attend_exam:
+  - text: Please apply for a SAC form, providing all relevant supporting evidence.
+  utter_faq/tutorial_solution:
+  - text: The solutions to tutorial worksheets will usually be posted on canvas , a week after the tutorial session.
+  utter_faq/tutor_feedback:
+  - text: Once the assignment has been marked, you will receive an overall score for your assignment as well as any additional feedback on the 'Submissions and Rubric tab' on Canvas.
+  utter_faq/mock_paper_practice:
+  - text: Usually, tutors will release a mock test before the actual test , so that you have an understanding of the layout of the test and the types of questions you will be tested on.
+  utter_faq/research_material_assg:
+  - text: Please see the Library Skillup Module on Canvas which will give you further information on how to carry out effective research. The link for the Library Skillup Module is:[Library SkillUP (instructure.com)](https://herts.instructure.com/courses/61421)
+  utter_faq/vpn_set_up:
+  - text: Follow the instructions at [https://vpnsetup.herts.ac.uk](https://vpnsetup.herts.ac.uk). Remember you need to log in to the VPN services using your username@herts.ac.uk .Once you have downloaded the VPN application you may have to look for it in your hidden icons tray (Windows PC).
+  utter_faq/multi_factor_auth:
+  - text: |-
+      Please follow the instructions specified in the link below:
+       [Multi-factor Authentication (MFA) | Ask Herts | University of Hertfordshire](https://ask.herts.ac.uk/multifactor-authentication-mfa)
+  utter_faq/tech_problem:
+  - text: |-
+      If you have a technical problem , for example connecting to Wifi or problems logging in to university systems please contact the **Library and Computing Services Helpdesk**. You can contact them via the following
+       Online:  https://helpdesk.herts.ac.uk/login 
+       Telephone:  +44 (0)1707 284678 or ext 4678
+       Email: helpdesk@herts.ac.uk 
+
+       Please include the following information in your email to us 
+       - full name 
+       - membership number 
+       - full description of your issue 
+       - including screenshots if relevant. 
+       Open 7 days a week: LRC and Helpdesk service hours and contact details.
+  utter_faq/plagarism_score:
+  - text: You will be able to upload your assignment to TurnitIn. It will scan your assignment for any plagiarism and return a percentage score.
+  utter_faq/final_grade_calculation:
+  - text: |-
+      Take your best 90 credits, add up the scores for the best 90 credits.
+       Then multiply by 0.25 for second year modules and 0.75 for third year modules.
+  utter_please_rephrasepe:
+  - text: I'm sorry can you please rephrase
+  - text: I'm sorry I don't understand that.
+  - text: Can you please rephrase in a sentence.
+  utter_default_fallback:
+  - text: Sorry I didn't get that. Can you rephrase?
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  utter_default:
+  - text: I'm sorry, I can't help you.
+actions:
+- utter_faq
+- utter_greet
+- utter_happy
+- utter_leader_email
+- utter_module_leader
+- utter_module_code
+- validate_module_form
+- actions_leader_email
+- actions_module_leader
+- actions_module_code
+- actions_module_name
+- actions_credits
+- actions_assg
+- actions_assg_weight
+- action_ovr_prog_leader
+- action_goodbye
+- action_send_idle_message
+- action_react_to_reminder
+- validate_dynamic_form
+- action_ask_question
+- action_game
+forms:
+  module_form:
+    required_slots:
+      # leader_email:
+      # - auto_fill: true
+      #   entity: leader_email
+      #   type: from_entity
+      module_leader:
+      - auto_fill: true
+        entity: module_leader
+        type: from_entity
+      module_name:
+      - auto_fill: true
+        entity: module_name
+        type: from_entity
+      module_code:
+      - auto_fill: true
+        entity: module_code
+        type: from_entity
+  dynamic_form:
+    # ignore_intents:
+    #   - inform
+    #   - leader_email
+    #   - module_leader
+    #   - module_name
+    #   - credits
+    #   - assg
+    #   - assg_weight
+    #   - faq
+    #   - greet
+    #   - goodbye
+    #   - mood_great
+    #   - mood_unhappy
+    #   - bot_challenge
+    #   - module_code
+    #   - nlu_fallback
+    #   - ovr_prog_leader
+    #   - EXTERNAL_reminder
+    required_slots:
+      question:
+      - auto_fill: true
+        type: from_text
+e2e_actions: []

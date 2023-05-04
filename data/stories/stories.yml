@@ -1,0 +1,77 @@
+version: "2.0"
+
+stories:
+
+- story: happy path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_great
+  - action: utter_happy
+  - action: action_send_idle_message
+
+- story: sad path 1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: affirm
+  - action: utter_happy
+  - action: action_send_idle_message
+
+- story: sad path 2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: mood_unhappy
+  - action: utter_cheer_up
+  - action: utter_did_that_help
+  - intent: deny
+  - action: utter_goodbye
+  - action: action_send_idle_message
+
+- story: ovrerall program leader
+  steps:
+  - intent: ovr_prog_leader
+  - action: action_ovr_prog_leader
+  - action: action_send_idle_message
+
+# - story: french story
+#   steps:
+#   - intent: faq
+#   - action: module_form
+#   - active_loop: module_form
+#   - slot_was_set:
+#     - requested_slot: module_name
+#   - slot_was_set:
+#     - module_name: french
+#   - slot_was_set:
+#     - requested_slot: null
+#   - active_loop: null
+#   - action: action_module_num
+#   - action: action_deactivate_loop
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+
+# - story: french story
+#   steps:
+#   - intent: faq
+#   - action: module_form
+#   - active_loop: module_form
+#   - slot_was_set:
+#     - requested_slot: module_name
+#   - slot_was_set:
+#     - module_name: english
+#   - slot_was_set:
+#     - requested_slot: null
+#   - active_loop: null
+#   - action: action_module_num
+#   - action: action_deactivate_loop
+#   - active_loop: null
+#   - slot_was_set:
+#     - requested_slot: null
+
+

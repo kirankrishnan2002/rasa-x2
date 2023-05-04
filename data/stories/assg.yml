@@ -1,0 +1,62 @@
+version: "2.0"
+stories:
+- story: interactive_assg_story
+  steps:
+  - intent: assg
+  - action: module_form
+  - active_loop: module_form
+  - slot_was_set:
+    - requested_slot: module_code
+  - slot_was_set:
+    - module_code: 6com1031
+  - slot_was_set:
+    - db_id: '0'
+  - slot_was_set:
+    - module_name: Project Planning
+  - slot_was_set:
+    - module_leader: Paul Morris
+  - slot_was_set:
+    - leader_email: p.m.morris@herts.ac.uk
+  - slot_was_set:
+    - credits: '15 credits '
+  - slot_was_set:
+    - assg: 3.0
+  - slot_was_set:
+    - assg_weight: "Assignment 1- 10%\nAssignment 2-40%\nAssignment 3- 50%"
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: actions_assg
+  - action: action_send_idle_message
+- story: activate_assg_form
+  steps:
+  - intent: assg
+  - action: module_form
+  - active_loop: module_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: actions_assg
+  - action: action_send_idle_message
+- story: Story from Conversation ID 81200fcb85004dc9baaad987bc28956c
+  steps:
+  - intent: bot_challenge
+  - action: utter_iamabot
+  - action: action_send_idle_message
+  - intent: EXTERNAL_reminder
+  - action: action_react_to_reminder
+  - slot_was_set:
+    - question: null
+  - action: dynamic_form
+  - active_loop: dynamic_form
+  - slot_was_set:
+    - requested_slot: question
+  - slot_was_set:
+    - dq_type: talents
+  - intent: deny
+  - action: dynamic_form
+  - slot_was_set:
+    - question: not really
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null

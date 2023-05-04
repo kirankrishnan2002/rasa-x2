@@ -1,0 +1,2603 @@
+version: "2.0"
+nlu:
+- intent: faq/timetable_change
+  examples: |
+    - Is it possible to change the timetable.
+    - Can I change the timetable?
+    - What is the process to change the time table?
+    - Tell the way to change time table dates.
+    - Make changes to my timetale
+    - I have to work , this timetable does not work for me , can I change it
+    - How do I change my timetable
+    - How to alter my schedule
+    - Adapt my timetable
+    - Timetable does not suit me can I change it
+    - Alter my timetable
+    - Make changes to my schedule
+    - Modify my timetable
+    - How to modify timetable
+    - Adjust timetable
+    - How do I adjust my timetable
+    - Improve my timetable
+    - I have other commitments my timetable does not suit me , can I ask to change it
+    - Ask to change timetable
+    - tutorial room change
+- intent: faq/timetable_empty
+  examples: |
+    - My timetble is empty what fo I do?
+    - Empty timetable, what to do?
+    - why do I see my time table empty?
+    - why is my timetable empty?
+    - My timetable is empty what do I do
+    - My timetable is empty who should I tell
+    - My timetable is empty who should I contact
+    - My timetable who should I email
+    - My timetable who should I speak to
+    - My timetable is blank what shall I do
+    - Timetable blank what should I do
+    - Blank timetable who do I contact
+    - Timetable blank  who do I contact
+    - Blank timetable who do I call
+    - Timetable not visible /schedule
+    - Timetable blank
+    - Schedule is blank
+    - Schedule is empty
+    - University calender is empty what do I do
+    - University calender on Studynet is empty
+    - Calender on university website
+    - Schedule empty on studynet
+    - Nothing on my timetable
+    - Nothing on my schedule what should I do
+    - Calender not showing up
+    - Timetable not opening
+    - Timetale not published
+    - Schedule not published
+- intent: faq/timetable_room_change
+  examples: |
+    - What happens to my timetabl if there is a room or tutorial change?
+    - Can you send me a notification if there is a change in the room?
+    - Where can I get the timetable change notification?
+    - Can you send me notification if my timetable or room changed?
+    - What happens to my schedule if there are changes to the room or the tutorial?
+    - Changes to tutorial timings
+    - Changes to tutorials rooms
+    - Changes to tutorial timing what do I do
+    - Changes to tutorial timings who do I contact
+    - How will I be told about room changes and tutorial changes
+    - How will I informed about tutorial time changes
+    - How will I be informed about tutorial room changes
+    - How will I be informed about lecture changes
+    - Tutorial room changes
+    - Lecture room changes
+    - What happens to my schedule if the room or the tutorial are changed?
+    - Who will tell me about room changes
+    - Who will tell me about lecture room changes
+    - Modifications to tutorial room
+    - Modifications to lecture time
+    - Tutorial time changes
+- intent: faq/tutorial_group_incorrect
+  examples: |
+    - What to do if my tutorial group is incorrect ot not visible.
+    - I cant see my tutorial group.
+    - Incorrect tutorial group
+    - I see wrong tutorial group
+    - I don't see my tutorial group
+    - What do I do if my tutorial group is incorrect or not visible?
+    - Tutorial group number is wrong what do I do
+    - Tutotial group number not showing up
+    - Tutorial group number not visible
+    - Tutorial group blank
+    - Tutorial group number is not visible what do I do
+    - Tutorial group number is not visible who do I contact
+    - Tutorial group number empty who do I email
+    - Tutorial room number blank
+    - Tutorial room number empty
+    - The tutorial group empty
+    - No tutorial group
+    - No tutorial room number who I contact
+- intent: faq/map_of_rooms
+  examples: |
+    - Where can I find the map of room locations on campus?
+    - what is the location of my rooms?
+    - where are the maps of my room?
+    - where is my class room?
+    - how can I find my class room?
+- intent: faq/overview_of_main_assessments
+  examples: |
+    - Can you give us an overview of the main assessements for the module?
+    - overview of the main assesements of module.
+    - overview of the main assesements
+    - assessement overview
+    - module overview assessments.
+- intent: faq/final_assessement
+  examples: |
+    - When is the final assessement of the module?
+    - When is the final exam?
+    - what are the dates for final exam.
+    - How do I know the dates for the final exam?
+- intent: faq/assignment_due
+  examples: |
+    - When is the assignment due?
+    - When is the Assignment 1 due?
+    - What is the last date for 2nd assignment?
+    - Can you tell the due date for assignemnt 3?
+    - please tell the assignment due date.
+- intent: faq/assignment_late
+  examples: |
+    - What happens if I submit the assignment late on Studynet?
+    - Penalty for late assignment submission?
+    - Late assignment submission
+    - reduciton in marks for late assignment
+    - What happens if I submit an assignment late on Study net
+    - What happens if I submit an assignment late on Canvas
+    - Late submission on canvas , what to do
+    - Late submission on studynet what do I do
+    - Late assignment submission who do I contact
+    - Late assignment submission who do I email
+    - Late assignment submission, what do I email
+    - I submitted late on studynet , what happens
+    - Will marks be deducted because I submitted late
+    - Late submission
+    - Late submission canvas
+    - Submit after deadline
+    - Submit after hand in date
+    - I submitted after deadline what happens
+    - How will submitting an assignment late affect my  marks
+    - How will submitting an assignment late affect my grade
+    - What occurs if I submit a Study.net assignment beyond the deadline?
+    - Late assignment
+    - What happens if I submit an assignment to Study Net after its due date
+    - Submission done after due , what happens
+    - Is there a penalty for a late submission
+    - Penalty late assignment
+    - Is there penalty for late assignment
+    - Is there a reduction in marks if assignment is late
+    - Reduced marks late submitted
+    - Are marks deducted for a late submission
+    - Are marks deducted if an assignment is submitted after the hand in date
+    - Are marks deducted if an assignment is submitted after deadline
+    - Are marks deducted if submitted after due date
+    - Marks reduced for submitting after deadline
+    - Mark reduced for submitting after hand in date
+    - Do I fail if I submit late
+    - Do I fail if I submit an assignment after hand in date
+    - Do I fail if I have a late submission
+    - Can I still pass the assignment if I submit late
+    - Can I still pass the assignment if I submit past the deadline
+- intent: faq/assignment_extension
+  examples: |
+    - How do I apply for short term extension?
+    - Assignment extention
+    - extention for assessement
+    - is it possible to apply for extension for assignment?
+    - How do I apply for a short term extension
+    - How to get short term extension
+    - short extension
+    - short term extension
+    - Who do I talk to for a short term extension
+    - How do I extend the deadline for the assignment
+    - I need more time to do the assignment what do I do
+    - I had to go to work and couldn’t finish the assignment
+    - Need more time for assignment
+    - Cant complete assignment on time what do I do
+    - I need 2 more days to do the assignment
+    - I was not feeling well and need more time
+    - I was not feeling and couldn’t finish the assignment
+    - Short extension
+    - Missed deadline what do I do
+    - Cant do assignment by the deadline
+    - Who do I send request to for a short term extension
+    - How to apply for STE
+    - How to get approval for short term extension
+    - How to get a STE
+    - Need extra time to finish work , what do I do
+    - Need extra time to finish the assignment
+    - Who do I need to contact for an extension
+    - How do I get approval for an extension
+    - Who do I talk to for an extension.
+    - What do I need to do to extend assignment deadline
+    - Lengthen assignment date
+    - What is a short term extension
+    - Am I eligible for a short-term extension
+    - What is the criteria for a short term extension
+    - What evidence do I need to provide for a short term extension
+    - How many days extra do I get to complete the assignment
+    - I only need a couple more days for the assignment what to do I do
+    - I was sick and could not finish the assignment who do I talk to
+    - I need an extra day to finish the assignment who do I contact
+- intent: faq/exceptional_circumstances
+  examples: |
+    - How do I apply for exceptional circumstances?
+    - exceptional circumstances
+    - way to apply for exceptional circumstances
+    - process to apply for exceptional circumstances
+- intent: faq/studyneeds_agreement
+  examples: |
+    - How do I apply for a studyneeds agreement?
+    - process for study needs agreement.
+    - how to apply for studyneeds agreement.
+    - study needs agreement
+    - studyneeds agreement
+    - How do I apply for a studyneeds agreement
+    - Who do I contact to get a studyneeds agreement
+    - What Is a study needs agreement
+    - What is a study agreement
+    - What is a special study agreement
+    - How do I submit a studyneeds application
+    - Study needs agreement
+    - SN
+    - SNA
+    - Sna help
+    - Study agreement
+    - Study needs
+    - Special needs
+    - How do I apply special needs help
+    - How do I apply for additional needs
+    - Who do I contact if I have extra needs
+    - Who I speak to I have a disability and need help in my studies
+    - I have special needs and need extra help
+    - I need more time during assignments due to my disability what to I do
+    - How do obtain a study agreement
+    - How do I obtain a study needs agreement
+    - How do get a sna
+    - How do I apply for sna
+    - Who to contact for a sna
+    - Am I eligible for a sna
+    - Do I meet the criteria for a sna
+    - How do I know if I need a sna
+    - I have a disability and need help , what do I do
+    - Special needs  agreement
+    - How do I know if I need a studyneeds agreement
+    - How do I know if I can apply for study needs
+    - How do I request for a studyneeds agreement
+    - How do request for sna
+    - sna help
+    - how do i get an sna
+- intent: faq/referal_in_module
+  examples: |
+    - How do I know if I a eligible for a referal in a module?
+    - eligibility for module referal
+    - how do I know if I am aplicable for a referal for module?
+    - module referal eligibility.
+- intent: faq/deferral_for_module
+  examples: |
+    - How do I know if I am eligible for a deferal for a module?
+    - eligibility for module deferal
+    - whats eligibity for module deferal?
+    - am I aplicable for a module deferal?
+    - how do i know if i am eligible for a deferal
+- intent: faq/student_record
+  examples: |
+    - How do I access my student record?
+    - accessing my student record.
+    - steps to get my student record
+    - how can I see my records
+    - student record
+- intent: faq/extenuating_circumstances
+  examples: |
+    - who do i contact if I have extenuating circumstances?
+    - who to reach for extenuating circumstances?
+    - what to do if I have extenuating circumstances?
+    - can I ask my perosnal tutor if I have any extenuating circumstances?
+    - speaking to my module tutor if I have extenuating issue
+    - can program leader help me if I have any externuating problem?
+    - How do I apply for extenuating circumstances
+    - Extenuating circumstances forms
+    - EC application
+    - Who I contact if I have extenuating circumstances
+    - Who can I talk to if I have extenuating circumstances
+    - How do I submit a Extenuating circumstances form
+    - How do I submit a extenuating circumstances form,
+    - I was sick during the exam period what do I do
+    - I could not attend one of the exams what do I do
+    - I could not attend one of the exams  who do I need to contact
+    - I could not attend one of the exams who do I tell
+    - I could not attend the exam who do I email ,
+    - I was sick during the time of the exam , what do I do
+    - I was not feeling well and missed an exam what do I do
+    - I missed some assignments during the term what do I need to do
+    - I missed some assignment in the term who do I contact
+    - I missed some assignments in the semester who do I email
+    - I missed some deadlines , who do I contact
+    - I missed some deadlines who do I tell
+    - Serious adverse circumstances
+    - Serious circumstances
+    - Serious circumstances form
+    - How do I apply for serious adverse circumstances
+    - How do I apply for a SAC
+    - Sac form
+    - Sac form submission
+    - I coudnt take the exam for personal reasons what do I do
+    - I could not take do the assignment for personal reasons , what next
+    - I was unable to take the exam , what happens
+    - I didn’t finish my assignment what happens
+    - I was unable to take the exam what happens next
+    - I was unable to take the exam , how do I resolve the issue
+    - I was unable to take the exam due to personal problems what do I do
+    - I was unable to take the exam due to bereavement
+    - I was unable to do the test due to personal problems what do I do
+- intent: faq/cant_attend_exam
+  examples: |
+    - What do I fo if I cannot attent an exam?
+    - I can't attend the exam...
+    - I am not able to attend the exam.
+    - I am ill, and wont be able to attend the exam.
+    - what do i do if I am not able to attend the exam?
+- intent: faq/tutorial_solution
+  examples: |
+    - When will the solutions to tutorial questions be posted on Canvas?
+    - will the solution be uploaded on canvas in a week?
+    - tutorial solutions
+    - solutions on canvas
+    - how long will it take to upload the solution on canvas
+    - I can't find the solutions on canvas of the tutorials.
+- intent: faq/tutor_feedback
+  examples: |
+    - Where can I find my tutors feedback on assignments?
+    - where to find tutor feedback on assignment?
+    - can I see my tutor feedback on canvas?
+    - is it possible to see the tutor feedback on canvas?
+- intent: faq/mock_paper_practice
+  examples: |
+    - Are there mock papers available to practice before the actual exam?
+    - Mock papers for practice
+    - practice papers
+    - paper for practice before the exam
+    - how can I prepare for paper before the exam?
+    - preparing papers before final exam
+- intent: faq/research_material_assg
+  examples: |
+    - Where do I look for research materials for my assignment?
+    - research materials for assg
+    - material for assignment
+    - material for research for the assignment
+- intent: faq/vpn_set_up
+  examples: |
+    - How do I set up a VPN
+    - vpn
+    - setup vpn
+    - how to set up vpn?
+    - steps to set vpn
+    - please tell how to use vpn?
+- intent: faq/multi_factor_auth
+  examples: |
+    - How do I set Multi Factor Authentication?
+    - multi factor auth
+    - multi factor authentication steps
+    - how to set multi factor authent
+    - MFA steps
+    - Can I set multi factor authentication MFA?
+- intent: faq/tech_problem
+  examples: |
+    - Who do I contact if I have a technical problem
+    - I am having a tech issue
+    - tech helpline
+    - how to contact tech team online?
+    - can I contact someone in library if I have a technical issue?
+    - how to resolve a technical issue?
+    - tech issue resolution.
+- intent: faq/plagarism_score
+  examples: |
+    - How do I check my assignment for a plagiarism score?
+    - plagiarism check
+    - steps to check the plagiarism
+    - how can I check plagiarism?
+    - can I check plagiarism on turninIn?
+    - TurnitIn plagiarism
+- intent: faq/final_grade_calculation
+  examples: |
+    - How do I calculate my final grade for the module?
+    - calculating the final grade for the module?
+    - how can I measure the final grades for exams?
+    - how is the final grade calculated?
+    - can you tell the percentage of final grade calculation?
+- intent: inform
+  examples: |
+    - I want to query [Project Planning](module_name)
+    - Its [Computer System Security](module_name).
+    - Its [Constructive Artificial Intelligence](module_name).
+    - [Cyber Security](module_name) module.
+    - [Artificial Life](module_name) module.
+    - [Embedded Systems Development(module_name) module.
+    - I want to query [Programming Paradigms](module_name)
+    - I want to query [Software Engineering Project](module_name)
+    - I am talking about [Object Orientated Development](module_name).
+    - Its [Network Protocols and Architectures](module_name).
+    - Its [Advanced Database Topics](module_name).
+    - [Concurrency](module_name) module.
+    - I am talking about [Computer Science Project](module_name).
+    - Module name is [Software Quality](module_name).
+    - I am talking about [AI and Robotic Applications](module_name).
+    - Its [Machine Learning and Nueral Computing](module_name).
+    - I am talking about [Algorithms and Data Structures](module_name).
+    - [Operating Systems and Networks](module_name) module.
+    - I am talking about [Accessibility and Usability](module_name).
+    - Its [Artificial Intelligence](module_name).
+    - Module name is [Database Concepts](module_name).
+    - Its [Computing Things](module_name).
+    - I want to query [Principles of Large Scale Systems](module_name)
+    - I want to query [6com1031](module_code)
+    - Its [6com1033](module_code).
+    - I want to query [6com1035](module_code)
+    - I want to query [6com1040](module_code)
+    - Module code is [6com1041](module_code).
+    - Module code is [6com1043](module_code).
+    - Its [6com1045](module_code).
+    - Module code is [6com1038](module_code).
+    - Its [6com1037](module_code).
+    - [6com1067](module_code) module code.
+    - [6com1048](module_code) module code.
+    - [6com1034](module_code) module code.
+    - Its [6com1053](module_code).
+    - [6com1042](module_code) module code.
+    - I am talking about [6com1036](module_code).
+    - I want to query [6com1044](module_code)
+    - I want to query [5com1054](module_code)
+    - I want to query [5com1055](module_code)
+    - I am talking about [5com2002](module_code).
+    - [5com2003](module_code) module code.
+    - Its [5com2005](module_code).
+    - I want to query [5com2004](module_code)
+    - Its [5com2007](module_code).
+    - [6com1031](module_code)
+- intent: greet
+  examples: |
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+    - hu
+- intent: goodbye
+  examples: |
+    - cu
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+    - good thanks you
+- intent: affirm
+  examples: |
+    - yes
+    - y
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - I had a few modules
+    - My lecture was good
+    - it was good
+    - great indeed
+    - it was great
+    - great
+    - had fun
+    - enjoyable
+    - Absolutely!
+    - Amazing!
+    - Awesome!
+    - Brilliant!
+    - Cool!
+    - Definitely!
+    - Excellent!
+    - Fantastic!
+    - Great!
+    - Hooray!
+    - Incredible!
+    - Lovely!
+    - Marvelous!
+    - Nice!
+    - Perfect!
+    - Phenomenal!
+    - Rad!
+    - Right on!
+    - Splendid!
+    - Super!
+    - Superb!
+    - Sweet!
+    - Terrific!
+    - That's great!
+    - That's perfect!
+    - That's right!
+    - That's super!
+    - That's wonderful!
+    - Wonderful!
+    - Wow!
+    - Yay!
+    - Yes!
+    - You bet!
+    - You got it!
+    - You're the best!
+    - Absolutely fantastic!
+    - Absolutely perfect!
+    - Absolutely wonderful!
+    - Amazing job!
+    - Amazing work!
+    - Awesome job!
+    - Awesome work!
+    - Brilliant job!
+    - Brilliant work!
+    - Fantastic job!
+    - Fantastic work!
+    - Great job!
+    - Great work!
+    - Incredible job!
+    - Incredible work!
+    - Lovely job!
+    - Lovely work!
+    - Marvelous job!
+    - Marvelous work!
+    - Nice job!
+    - Nice work!
+    - Perfect job!
+    - Perfect work!
+    - Phenomenal job!
+    - Phenomenal work!
+    - Rad job!
+    - Rad work!
+    - Splendid job!
+    - Splendid work!
+    - Super job!
+    - Super work!
+    - Superb job!
+    - Superb work!
+    - Sweet job!
+    - Sweet work!
+    - Terrific job!
+    - Terrific work!
+    - That's amazing!
+    - That's awesome!
+    - That's brilliant!
+    - That's fantastic!
+    - That's great work!
+    - That's incredible!
+    - That's lovely!
+    - That's marvelous!
+    - That's nice!
+    - That's perfect work!
+    - That's phenomenal!
+    - That's splendid!
+    - That's super work!
+    - That's superb!
+    - That's sweet!
+    - That's terrific!
+    - That's wonderful work!
+    - Wonderful job!
+    - Wonderful work!
+    - Wow, amazing job!
+    - Wow, amazing work!
+    - Wow, fantastic job!
+    - Wow, fantastic work!
+    - Wow, great job!
+    - Wow, great work!
+    - Wow, incredible job!
+    - Wow, incredible work!
+    - Wow, lovely job!
+    - Wow, lovely work!
+    - Wow, marvelous job!
+    - Wow, marvelous work!
+    - Wow, nice job!
+    - Wow, nice work!
+    - Wow, perfect job!
+    - Wow, perfect work!
+    - Wow, phenomenal job!
+    - Wow, phenomenal work!
+    - Wow, splendid job!
+    - Wow, splendid work!
+    - Wow, super job!
+    - Wow, super work!
+    - Wow, superb job!
+    - Wow, superb work!
+    - Wow, sweet job!
+    - Wow, sweet work!
+    - Wow, terrific job!
+    - Wow, terrific work!
+    - Wow, wonderful job!
+    - Wow, wonderful work!
+    - I had some great modules today!
+    - My lecture was really informative and interesting.
+    - Yes, my tutorial session was really engaging.
+    - I love playing sports and reading books as my hobbies.
+    - I am planning to pursue a career in data science in the future.
+    - My favourite movie is The Dark Knight.
+    - My favourite pizza topping is pepperoni.
+    - Yes, I participate in several extracurricular activities.
+    - Football is my favourite sport.
+    - I would like to specialize in artificial intelligence in the future.
+    - I am feeling really good today!
+    - I am currently in my third year of study.
+    - I am most passionate about helping others.
+    - My ambition is to become a successful software developer.
+    - I have a talent for playing the guitar.
+    - I use the smiling face with heart-eyes emoji the most.
+    - My dream holiday destination is Japan.
+    - I plan to relax and spend time with friends and family this weekend.
+    - I am planning to travel to Europe for the holidays.
+    - If I had a superpower, I would choose to fly.
+    - The best event I ever attended was a concert by my favourite band.
+    - My inspiration is my parents who have always supported me in my life.
+    - Today's modules were great! I learned so much.
+    - I had an interesting lecture on some new topics.
+    - Today's classes were very informative and engaging.
+    - It was fantastic! I learned a lot and the teacher was very engaging.
+    - The lecture was interesting and informative.
+    - I really enjoyed the lecture today.
+    - Yes, it was very engaging and I learned a lot from it.
+    - The tutorial session was very informative and helpful.
+    - The tutorial session was great and I was able to clear up some of my doubts.
+    - I love to read, play sports and explore new places in my free time.
+    - In my free time, I enjoy cooking, hiking, and photography.
+    - My hobbies include painting, listening to music, and playing video games.
+    - I plan to pursue higher education in my field and gain more experience.
+    - I would like to work for a reputable company and contribute to their success.
+    - I am planning to start my own business and make a difference in the industry.
+    - My favorite movie is The Shawshank Redemption. It's a classic.
+    - I love watching the movie Interstellar. It's a masterpiece.
+    - My favorite movie is The Godfather. It's a timeless classic.
+    - My favorite pizza topping is pepperoni. It's a classic.
+    - I like to have mushrooms and black olives on my pizza.
+    - My favorite pizza topping is extra cheese. Who doesn't love cheese?
+    - Yes, I am a member of the school's debate team and I also play soccer.
+    - I volunteer at a local animal shelter and also participate in the school's drama club.
+    - I am part of the school's robotics club and also enjoy playing the guitar.
+    - I enjoy playing soccer and watching basketball.
+    - I love playing tennis and watching football.
+    - My favorite sport is basketball. I also enjoy playing badminton.
+    - I am interested in machine learning and artificial intelligence.
+    - I would like to specialize in web development and frontend technologies.
+    - I am interested in cybersecurity and network engineering.
+    - I'm feeling great today! Ready to take on the day.
+    - I'm feeling good today, thank you for asking.
+    - I'm feeling a bit tired today, but still ready to learn.
+    - I am in my final year of studies.
+    - I am in my second year of studies.
+    - I am in my third year of studies.
+    - I am most passionate about making a positive impact in the world through my work.
+    - I am passionate about learning new things and expanding my knowledge.
+    - I am passionate about music and writing my own songs.
+    - My ambition is to become a successful entrepreneur and create jobs for people.
+    - I aspire to become a renowned researcher and contribute to the field of science.
+    - My ambition is to become a famous musician and inspire people through my music.
+    - Yes, I am a very good painter and have won several awards for my artwork.
+    - I am a good cook and painter
+    - laser eyes
+- intent: deny
+  examples: |
+    - no
+    - n
+    - never
+    - I don't think so
+    - don't like that
+    - no way
+    - not really
+    - I had no module
+    - none
+    - no module :(
+    - I didn't take any lecture today
+    - no lectures today
+    - No way!
+    - Absolutely not!
+    - I don't want to!
+    - I'm not interested.
+    - No, thank you.
+    - I'm sorry, but no.
+    - I can't do that.
+    - Not happening.
+    - Nope.
+    - Never.
+    - I refuse.
+    - Forget it.
+    - Not a chance.
+    - I'd rather not.
+    - No, I'm good.
+    - I don't think so.
+    - I'm afraid not.
+    - That's not for me.
+    - No, that's not it.
+    - No, not really.
+    - Sorry, no can do.
+    - That's out of the question.
+    - No, and that's final.
+    - Not now, maybe later.
+    - I'm not feeling up to it.
+    - I'm not in the mood.
+    - I'm not interested at this time.
+    - I don't want to talk about it.
+    - I don't think that's a good idea.
+    - I don't want to be involved.
+    - I don't want to participate.
+    - That doesn't work for me.
+    - I'm not comfortable with that.
+    - I'm not willing to do that.
+    - I'd rather pass.
+    - I'd prefer not to.
+    - That's not my thing.
+    - I don't think I can.
+    - No, that's not possible.
+    - I don't agree.
+    - I don't like that idea.
+    - I'm not on board with that.
+    - I'm sorry, but I can't.
+    - I'm not excited about that.
+    - I'm not thrilled about that.
+    - I'm not keen on that.
+    - I'm not enthusiastic about that.
+    - I'm not in the right state of mind.
+    - I don't think it's a good fit.
+    - I don't think I'm the right person for that.
+    - I'm not interested in pursuing that.
+    - I'm not interested in taking part.
+    - That's not something I'm interested in.
+    - I'm not interested in that opportunity.
+    - I'm not feeling up to it right now.
+    - I don't have the energy for that.
+    - I don't have the time for that.
+    - I don't have the motivation for that.
+    - I don't have the interest in that.
+    - I don't see how that would benefit me.
+    - That's not aligned with my goals.
+    - That's not aligned with my values.
+    - That doesn't appeal to me.
+    - That doesn't interest me.
+    - I'm not up for that.
+    - I'm not down for that.
+    - I'm not feeling it.
+    - I'm not in the mood for that.
+    - I'm not in the right frame of mind.
+    - That doesn't sit well with me.
+    - I'm not happy about that.
+    - That's not something I'm comfortable with.
+    - I'm not on the same page.
+    - I'm not feeling comfortable with that.
+    - That's not something I'm willing to do.
+    - That's not something I'm capable of.
+    - I don't want to take that risk.
+    - I don't want to be part of that.
+    - I don't want to commit to that.
+    - I don't want to make that commitment.
+    - aint got any hobby
+    - no time for hobbies
+    - hobbies suck
+    - What modules? I don't even remember.
+    - It was a boring lecture, to be honest.
+    - No, the tutorial session wasn't engaging at all.
+    - I don't have any hobbies.
+    - I don't have any future endeavours planned.
+    - I don't watch movies.
+    - I don't like pizza toppings.
+    - No, I don't take part in any extracurricular activities.
+    - I don't like any sports.
+    - I haven't decided on a field of computer science to specialize in.
+    - I don't feel well today.
+    - I'd rather not say which year of study I'm in.
+    - I don't have any passions.
+    - I don't have any ambitions for the future.
+    - No, I don't have any hidden talents.
+    - I don't use emojis when messaging other people.
+    - I don't have a dream holiday destination.
+    - I don't have any plans for the weekend.
+    - No, I don't have any plans for the holidays.
+    - I don't care about having superpowers.
+    - I haven't attended any good events.
+    - I don't have an inspiration.
+    - Today's lectures were not very helpful.
+    - I didn't understand anything in today's classes.
+    - The course material was too difficult for me to understand.
+    - The lecturer seemed uninterested today.
+    - The lectures were very boring and monotonous.
+    - I didn't feel like attending the lectures today.
+    - It was terrible, I couldn't follow anything.
+    - I found it very difficult to keep up with the lecture.
+    - The lecture was very dry and uninteresting.
+    - The lecturer didn't seem well prepared.
+    - The lecture seemed too long and drawn out.
+    - I didn't learn anything new in the lecture.
+    - No, it was very boring and uneventful.
+    - I didn't feel engaged during the tutorial session.
+    - The tutor didn't seem interested in helping us.
+    - The session seemed too difficult for me to keep up with.
+    - I found the session very frustrating and unhelpful.
+    - I didn't learn anything new in the session.
+    - I don't really have any hobbies.
+    - I'm not really interested in anything in particular.
+    - I'm too busy with work/study to have any hobbies.
+    - I used to have hobbies, but I don't anymore.
+    - I don't enjoy any activities enough to consider them hobbies.
+    - I'm not a very active person, so I don't have any hobbies.
+    - I don't have any plans for the future.
+    - I don't really know what I want to do with my life.
+    - I don't think I have any marketable skills.
+    - I'm not really interested in pursuing anything specific.
+    - I don't have the resources to pursue any particular goal.
+    - I don't feel like I have the motivation to pursue anything.
+    - I don't really have a favorite movie.
+    - I don't watch movies very often.
+    - I don't like any movies enough to call them my favorite.
+    - I haven't seen any good movies recently.
+    - I can't remember the last time I saw a movie I enjoyed.
+    - I find most movies to be very predictable and boring.
+    - I don't really like pizza that much.
+    - I'm not a big fan of any pizza toppings.
+    - I can't eat pizza due to dietary restrictions.
+    - I'm trying to avoid eating unhealthy foods like pizza.
+    - I prefer other foods to pizza.
+    - I haven't had pizza in a long time.
+    - No, I don't have time for extracurricular activities.
+    - I'm not really interested in extracurricular activities.
+    - I don't think there are any extracurricular activities that suit my interests.
+    - I don't have the resources to participate in extracurricular activities.
+    - I don't see the point in participating in extracurricular activities.
+    - I don't feel like I would fit in with any extracurricular activities.
+    - I don't really like sports that much.
+    - I'm not very good at sports.
+    - I don't enjoy any sports enough to call them my favorite.
+    - I can't play sports due to health reasons.
+    - I prefer other activities to sports.
+    - I haven't played sports in a long time.
+    - I am not interested in any field of computer science.
+    - I have no idea what field I want to specialize in.
+    - I don't have any interest in computer science.
+    - None of the fields in computer science interests me.
+    - I have not yet decided which field to specialize in.
+    - Computer science is not my cup of tea.
+    - I don't have any plans to specialize in any field of computer science.
+    - I'm not sure if I want to specialize in any field of computer science.
+    - None of the fields in computer science appeal to me.
+    - I'm feeling terrible today.
+    - It's not a good day for me.
+    - I'm not feeling well today.
+    - I'm feeling down today.
+    - I'm not in a good mood today.
+    - I'm feeling sad today.
+    - I'm feeling sick today.
+    - I'm not feeling too good today.
+    - It's been a rough day for me.
+    - I'm feeling stressed out today.
+    - I don't want to talk about my year of study.
+    - I'm not comfortable sharing my year of study.
+    - I'm not in a position to reveal my year of study.
+    - I don't think my year of study is relevant to this conversation.
+    - My year of study is none of your business.
+    - I'm not interested in discussing my year of study.
+    - I'm not sure if I want to disclose my year of study.
+    - I'm not willing to share my year of study.
+    - Let's talk about something else instead of my year of study.
+    - I don't really have any passions.
+    - I'm not a very passionate person.
+    - I don't know what I'm passionate about.
+    - I'm not interested in anything in particular.
+    - I don't have any specific passions.
+    - I haven't found anything that I'm really passionate about.
+    - I'm not passionate about anything at the moment.
+    - I don't think I have any passions.
+    - I'm not really sure what I'm passionate about.
+    - I'd rather not talk about what I'm passionate about.
+    - I don't have any specific ambitions for the future.
+    - I'm not sure what my ambitions are yet.
+    - I haven't really thought about my ambitions for the future.
+    - I'm not ambitious by nature.
+    - I don't have any grand ambitions for the future.
+    - I'm not interested in setting any ambitious goals for the future.
+    - I'd rather live in the present than worry about the future.
+    - I don't think I need any ambitions to be happy in life.
+    - I'm not sure if I want to share my ambitions for the future.
+    - I don't have any long-term ambitions at the moment.
+    - I wish I had hidden talents, but unfortunately, I don't.
+    - Nope, I'm just an average person with no special skills.
+    - I don't think I have any hidden talents.
+    - I haven't discovered any hidden talents yet.
+    - Sorry to disappoint you, but I don't have any hidden talents.
+    - I'm just a regular person with no extraordinary abilities.
+    - No, I'm not particularly talented in anything.
+    - I'm afraid I don't have any hidden talents to share.
+    - No, I don't have any secret skills or abilities.
+    - I don't really use emojis that much.
+    - I'm not really an emoji person.
+    - I don't have a particular favorite emoji.
+    - I don't use emojis often, so I don't have a favorite.
+    - I prefer to use words rather than emojis.
+    - I don't use emojis enough to have a favorite one.
+    - Sorry, I don't use emojis, so I can't answer that.
+    - I don't think I have a favorite emoji.
+    - I'm not really into emojis, so I can't answer that.
+    - I'm not sure what my favorite emoji is, to be honest.
+    - I don't really have a dream holiday destination.
+    - I haven't really thought about a dream holiday destination.
+    - Sorry, I'm not really interested in traveling, so I don't have a dream holiday destination.
+    - I can't really think of a dream holiday destination at the moment.
+    - I'm not really into traveling, so I don't have a dream holiday destination.
+    - I don't think I have a dream holiday destination.
+    - I'm not really sure what my dream holiday destination would be.
+    - I don't have a specific dream holiday destination in mind.
+    - Sorry, I'm not really interested in going on holiday, so I don't have a dream destination.
+    - I haven't really thought about where my dream holiday destination would be.
+    - I haven't made any plans for the weekend yet.
+    - Sorry, I don't really have anything planned for the weekend.
+    - I'm not really sure what I'm going to do this weekend.
+    - I don't have any exciting plans for the weekend.
+    - I'm just going to relax and take it easy this weekend.
+    - I don't have anything planned for the weekend, to be honest.
+    - I'm not really sure what I feel like doing this weekend.
+    - I haven't really thought about what I'm going to do this weekend.
+    - Sorry, I don't have any interesting plans for the weekend.
+    - I don't have any plans for the holidays.
+    - I haven't really thought about what I'm going to do during the holidays.
+    - Sorry, I'm not really sure what my plans are for the holidays.
+    - I'm not really interested in making plans for the holidays.
+    - I don't have any exciting plans for the holidays.
+    - I haven't made any plans for the holidays yet.
+    - I'm just going to take it easy and relax during the holidays.
+    - I'm not really sure what I feel like doing during the holidays.
+    - Sorry, I don't have any specific plans for the holidays.
+    - I'm not really interested in doing anything special during the holidays.
+    - I don't believe in superpowers, so I can't answer that.
+    - That question is a bit childish. Can we move on?
+    - I don't think about having superpowers, sorry.
+    - I'm not interested in discussing hypothetical scenarios.
+    - I'm sorry, I'm not comfortable answering that question.
+    - I'd rather not say, if that's okay with you.
+    - I don't really have an answer for that.
+    - Sorry, but I'm not really into that kind of stuff.
+    - I'm not in the mood to talk about that right now.
+    - I don't feel like answering that question.
+    - I haven't attended any events that I consider "the best".
+    - I'm not really into events, to be honest.
+    - None of the events I've attended were particularly noteworthy.
+    - Sorry, I don't have an answer for that one.
+    - I don't really go to events, so I can't answer that.
+    - That's not really something I've thought about.
+    - I don't have a "best event", so to speak.
+    - I can't think of any events that were particularly great.
+    - I haven't been to any events that I would consider the best.
+    - I'm not sure how to answer that question.
+    - I don't really have any particular inspiration.
+    - I don't have a single inspiration, to be honest.
+    - Sorry, I'm not really comfortable sharing that.
+    - I don't really feel inspired by anyone in particular.
+    - I don't really think about inspiration that much.
+    - I don't have a specific person that inspires me.
+    - I'm not really sure who my inspiration would be.
+    - Sorry, but I'm not really comfortable answering that.
+    - I'm not really inspired by anyone at the moment.
+    - I don't have a specific person in mind as my inspiration.
+- intent: game
+  examples: |
+    - I love playing games
+    - What games do you like to play?
+    - Do you like board games?
+    - I'm bored, let's play a game
+    - Can you recommend any good games?
+    - I'm in the mood for a game
+    - What's your favorite game?
+    - Let's play a game
+    - Games are so much fun
+    - Have you played any new games recently?
+    - What kind of games do you enjoy?
+    - I want to play a game
+    - I enjoy playing video games
+    - Board games are my favorite
+    - Do you prefer console or PC games?
+    - What are some popular games right now?
+    - I'm really good at this game
+    - I'm terrible at this game
+    - I need a break from playing games
+    - Have you ever played this game before?
+    - This game is too hard for me
+    - What's the best game you've ever played?
+    - I can't wait to play this new game
+    - Have you heard of this game?
+    - I want to learn how to play this game
+    - What game should we play?
+    - I just finished playing a game
+    - What's your high score in this game?
+    - I'm addicted to this game
+    - I'm not very good at video games
+    - I'm a pro at this game
+    - Do you like multiplayer games?
+    - I play games to relax
+    - This game is so frustrating
+    - Let's play a game together
+    - What game are you playing right now?
+    - I love playing games with my friends
+    - I want to buy a new game
+    - What's your favorite video game?
+    - I'm so close to beating this game
+    - What game do you recommend for beginners?
+    - What's the most challenging game you've played?
+    - I'm really into puzzle games
+    - This game is so much fun to play with friends
+    - I can't stop playing this game
+    - This game is too easy for me
+    - I'm always looking for new games to play
+    - What game should I play next?
+    - I'm terrible at video games
+    - I love playing games on my phone
+    - This game has great graphics
+    - I'm so close to unlocking this achievement in the game
+    - What's the best game you've played this year?
+    - I'm not very good at this game yet
+    - I love playing classic games
+    - This game is really addictive
+    - I can't believe how realistic this game is
+    - I'm really enjoying this game
+    - I love playing strategy games
+    - What's the most popular game right now?
+    - I'm getting better at this game
+    - This game is so immersive
+    - I want to try playing this game online
+    - I love playing retro games
+    - What game would you recommend for a long car ride?
+    - I love playing sports games
+    - This game is so easy to pick up and play
+    - I want to beat my high score in this game
+    - What's the best game for a group of friends to play together?
+    - I'm always looking for new challenges in games
+    - This game is so satisfying to play
+    - I'm a big fan of open-world games
+    - What's the most addictive game you've ever played?
+    - I love playing adventure games
+    - I can't wait for the sequel to this game to come out
+    - I'm really competitive when I play games
+    - This game is perfect for a rainy day
+    - I want to try playing this game on a harder difficulty level
+    - What game can you play for hours without getting bored?
+    - I'm really into action games
+    - This game is so much better than I expected
+- intent: mood_great
+  examples: |
+    - perfect
+    - great
+    - amazing
+    - feeling like a king
+    - wonderful
+    - I am feeling very good
+    - I am great
+    - I am amazing
+    - I am going to save the world
+    - super stoked
+    - extremely good
+    - so so perfect
+    - so good
+    - so perfect
+    - good
+    - I am good
+- intent: mood_unhappy
+  examples: |
+    - my day was horrible
+    - I am sad
+    - I don't feel very well
+    - I am disappointed
+    - super sad
+    - I'm so sad
+    - sad
+    - very sad
+    - unhappy
+    - not good
+    - not very good
+    - extremly sad
+    - so saad
+    - so sad
+- intent: bot_challenge
+  examples: |
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - are you a bot
+- intent: module_code
+  examples: |
+    - What is the code of [Project Planning](module_name)?
+    - Can you tell the code of [Computer System Security](module_name)?
+    - Can you tell the code of [Constructive Artificial Intelligence](module_name)?
+    - Can you tell the code of the module [Cyber  Security](module_name)?
+    - What is the module code for the module [Artificial  Life](module_name)?
+    - What is the module code for the module [Embedded Systems Development](module_name)?
+    - Can you tell the code of [Programming Paradigms](module_name)?
+    - Please tell the code of [Software Engineering Project](module_name) module.
+    - Can you tell the code of [Object Orientated Development](module_name)?
+    - What is the module code for the module [Network Protocols and Architectures](module_name)?
+    - Please tell the code of [Advanced Database Topics](module_name) module.
+    - What is the module code for the module [Concurrency](module_name)?
+    - Can you tell the code of the module [Computer Science Project](module_name)?
+    - What is the code of [Software Quality](module_name)?
+    - Can you tell the code of the module [AI and Robotic Applications](module_name)?
+    - Please tell the code of [Machine Learning and Nueral Computing](module_name) module.
+    - What is the module code for the module [Algorithms and Data Structures](module_name)?
+    - Please tell the code of [Operating Systems and Networks](module_name) module.
+    - Can you tell the code of the module [Accessibility and Usability](module_name)?
+    - What is the module code for the module [Artificial Intelligence](module_name)?
+    - What is the code of [Database Concepts](module_name)?
+    - What is the module code for the module [Computing Things](module_name)?
+    - Can you tell the code of the module [Principles of Large Scale Systems](module_name)?
+    - what is the module code for [project planning](module_name)
+    - what is the module code
+    - Module number for [PP](module_name).
+    - Can you tell the code of the module [Project](module_name)?
+    - What is the module code for the module [Project Planning](module_name)?
+    - Please tell the module id of [Planning](module_name) module.
+    - What is the module number for [CSS](module_name)?
+    - What is the module code for the module [Computer](module_name)?
+    - What is the module if of [Computer System](module_name)?
+    - Can you tell the code of the module [Computer Security](module_name)?
+    - Can you tell the code of the module [System](module_name)?
+    - What is the module code for the module [Security](module_name)?
+    - What is the module number for [CAI](module_name)?
+    - What is the module code for the module [Constructive AI](module_name)?
+    - What is the module code for the module [Constructive Artificial](module_name)?
+    - What is the module if of [Constructive Intelligence](module_name)?
+    - What is the module number for [CS](module_name)?
+    - Module number for [Cyber](module_name).
+    - What is the module number for [Cyber Security](module_name)?
+    - Can you tell the code of [Security](module_name)?
+    - Can you tell the code of [AL](module_name)?
+    - What is the module number for [Artificial](module_name)?
+    - Can you tell the code of [Artificial Life](module_name)?
+    - Module number for [Life](module_name).
+    - What is the module if of [ESD](module_name)?
+    - Please tell the module id of [Embedded](module_name) module.
+    - Module number for [Embedded Systems](module_name).
+    - Please tell the module id of [Embedded Development](module_name) module.
+    - Please tell the module id of [Systems](module_name) module.
+    - Can you tell the code of the module [PP](module_name)?
+    - Can you tell the code of [Programming](module_name)?
+    - What is the module code for the module [Programming Paradigms](module_name)?
+    - Please tell the module id of [Paradigms](module_name) module.
+    - What is the module code for the module [SEP](module_name)?
+    - Module number for [Software](module_name).
+    - Can you tell the code of the module [Software Engineering](module_name)?
+    - What is the module if of [Software Project](module_name)?
+    - What is the module code for the module [Engineering Project](module_name)?
+    - Module number for [Project](module_name).
+    - What is the module if of [OOD](module_name)?
+    - Can you tell the code of the module [Object](module_name)?
+    - Can you tell the code of the module [Object Orientated](module_name)?
+    - Module number for [Object Development](module_name).
+    - Module number for [NPaA](module_name).
+    - Can you tell the code of [Network](module_name)?
+    - Module number for [Network Protocols](module_name).
+    - What is the module if of [Network Architectures](module_name)?
+    - Can you tell the code of the module [Protocols](module_name)?
+    - Please tell the module id of [Protocols and Architectures](module_name) module.
+    - Module number for [Architectures](module_name).
+    - Please tell the module id of [ADT](module_name) module.
+    - What is the module if of [Advanced](module_name)?
+    - What is the module number for [Advanced Database](module_name)?
+    - Please tell the module id of [Advanced Topics in Database](module_name) module.
+    - What is the module number for [Database](module_name)?
+    - Can you tell the code of the module [Database Topics](module_name)?
+    - Module number for [Concurrency](module_name).
+    - What is the module if of [Conc](module_name)?
+    - Can you tell the code of the module [CSP](module_name)?
+    - Can you tell the code of [Computer](module_name)?
+    - What is the module number for [Computer Science](module_name)?
+    - Module number for [Computer Project](module_name).
+    - Can you tell the code of [CS Project](module_name)?
+    - Can you tell the code of [SQ](module_name)?
+    - What is the module code for the module [Software](module_name)?
+    - What is the module if of [Software Quality](module_name)?
+    - Please tell the module id of [Quality](module_name) module.
+    - What is the module if of [AaRA](module_name)?
+    - What is the module code for the module [AI](module_name)?
+    - Can you tell the code of the module [AI Robotic](module_name)?
+    - Can you tell the code of [AI Applications](module_name)?
+    - Module number for [Robotic](module_name).
+    - Please tell the module id of [Robotic and AI](module_name) module.
+    - Can you tell the code of [Robotic AI](module_name)?
+    - Can you tell the code of the module [Robotic Applications](module_name)?
+    - What is the module if of [MLaNC](module_name)?
+    - What is the module code for the module [Machine](module_name)?
+    - Module number for [Machine Learning](module_name).
+    - Can you tell the code of the module [ML and Nueral](module_name)?
+    - Can you tell the code of the module [Nueral](module_name)?
+    - What is the module number for [Nueral Machine](module_name)?
+    - What is the module code for the module [Nueral Learning](module_name)?
+    - What is the module if of [Nueral Computing](module_name)?
+    - What is the module number for [AaDS](module_name)?
+    - Module number for [ADS](module_name).
+    - What is the module if of [Algorithms](module_name)?
+    - What is the module if of [Algorithms Data](module_name)?
+    - What is the module if of [Algorithms Structures](module_name)?
+    - Module number for [Algorithms and DS](module_name).
+    - Can you tell the code of the module [Data Algorithms](module_name)?
+    - What is the module code for the module [Data Structures](module_name)?
+    - Can you tell the code of the module [OSaN](module_name)?
+    - Can you tell the code of the module [OSN](module_name)?
+    - Module number for [OS and N](module_name).
+    - Module number for [Operating Systems](module_name).
+    - Can you tell the code of the module [OS Networks](module_name)?
+    - What is the module number for [OS and Networks](module_name)?
+    - What is the module number for [AaU](module_name)?
+    - Can you tell the code of [Accessibility](module_name)?
+    - What is the module if of [Accessibility Usability](module_name)?
+    - Please tell the module id of [A and U](module_name) module.
+    - Can you tell the code of [AI](module_name)?
+    - Can you tell the code of the module [Artificial](module_name)?
+    - What is the module number for [Artificial Intelligence](module_name)?
+    - Module number for [DC](module_name).
+    - What is the module code for the module [Database Concepts](module_name)?
+    - Can you tell the code of the module [CT](module_name)?
+    - What is the module code for the module [Comp Things](module_name)?
+    - Please tell the module id of [PoLSS](module_name) module.
+    - What is the module if of [Large Scale Principles](module_name)?
+    - What is the module number for [LS Principles](module_name)?
+    - What is the module code for the module [Systems Principles](module_name)?
+- intent: leader_email
+  examples: |
+    - What is the module leader email address?
+    - What is the email address of the leader?
+    - Can you tell the email address of the module leader?
+    - and his email?
+    - what is his email?
+    - what is her email?
+    - can you tell the email?
+    - What is the email address of the programme leader?
+    - Do you know [Project Planning](module_name) module leaders email?
+    - What is the [Computer System Security](module_name) module leader's email?
+    - Module leader email of [Constructive Artificial Intelligence](module_name)?
+    - What is the [Cyber  Security](module_name) module leader's email?
+    - Module leader email of [Artificial  Life](module_name)?
+    - Who is [Embedded Systems Development](module_name) module leader's email?
+    - Do you know [Programming Paradigms](module_name) module leaders email?
+    - What is the [Software Engineering Project](module_name) module leader's email?
+    - Please tell the email of [Object Orientated Development](module_name) module leader.
+    - Who is [Network Protocols and Architectures](module_name) module leader's email?
+    - Module leader email of [Advanced Database Topics](module_name)?
+    - Module leader email of [Concurrency](module_name)?
+    - Who is [Computer Science Project](module_name) module leader's email?
+    - Module leader email of [Software Quality](module_name)?
+    - Module leader email of [AI and Robotic Applications](module_name)?
+    - Do you know [Machine Learning and Nueral Computing](module_name) module leaders email?
+    - Who is [Algorithms and Data Structures](module_name) module leader's email?
+    - What is the [Operating Systems and Networks](module_name) module leader's email?
+    - Please tell the email of [Accessibility and Usability](module_name) module leader.
+    - Please tell the email of [Artificial Intelligence](module_name) module leader.
+    - What is the [Database Concepts](module_name) module leader's email?
+    - Do you know [Computing Things](module_name) module leaders email?
+    - Do you know [Principles of Large Scale Systems](module_name) module leaders email?
+    - What is his email?
+    - what is his id
+    - what is the teachers id
+    - What is the email of the project leader of  [6com1031](module_code)
+    - What is the email of the project leader?
+    - what is the email of the module leader?
+    - What is his email
+    - Please tell the email of [PP](module_name) module teacher.
+    - Module tutor email of [Project](module_name)?
+    - Module tutor email of [Project Planning](module_name)?
+    - Module tutor email of [Planning](module_name)?
+    - Module tutor email of [CSS](module_name)?
+    - Do you know [Computer](module_name) module teacher email?
+    - Do you know [Computer System](module_name) module teacher email?
+    - Email of the [Computer Security](module_name) tutor
+    - What is the [System](module_name) module leader's email?
+    - Do you know [Security](module_name) module teacher email?
+    - Module tutor email of [CAI](module_name)?
+    - What is the [Constructive AI](module_name) module leader's email?
+    - Email of the [Constructive Artificial](module_name) tutor
+    - What is the [Constructive Intelligence](module_name) module leader's email?
+    - What is the [CS](module_name) module leader's email?
+    - Module tutor email of [Cyber](module_name)?
+    - Module tutor email of [Cyber Security](module_name)?
+    - Please tell the email of [Security](module_name) module teacher.
+    - Please tell the email of [AL](module_name) module teacher.
+    - Module tutor email of [Artificial](module_name)?
+    - Email of the [Artificial Life](module_name) tutor
+    - Please tell the email of [Life](module_name) module teacher.
+    - What is the [ESD](module_name) module leader's email?
+    - What is the [Embedded](module_name) module leader's email?
+    - Please tell the email of [Embedded Systems](module_name) module teacher.
+    - What is the [Embedded Development](module_name) module leader's email?
+    - What is the [Systems](module_name) module leader's email?
+    - What is the [PP](module_name) module leader's email?
+    - Email of the [Programming](module_name) tutor
+    - Please tell the email of [Programming Paradigms](module_name) module teacher.
+    - Please tell the email of [Paradigms](module_name) module teacher.
+    - Module tutor email of [SEP](module_name)?
+    - What is the [Software](module_name) module leader's email?
+    - Do you know [Software Engineering](module_name) module teacher email?
+    - What is the [Software Project](module_name) module leader's email?
+    - Module tutor email of [Engineering Project](module_name)?
+    - What is the [Project](module_name) module leader's email?
+    - Do you know [OOD](module_name) module teacher email?
+    - What is the [Object](module_name) module leader's email?
+    - What is the [Object Orientated](module_name) module leader's email?
+    - Module tutor email of [Object Development](module_name)?
+    - Module tutor email of [NPaA](module_name)?
+    - What is the [Network](module_name) module leader's email?
+    - What is the [Network Protocols](module_name) module leader's email?
+    - What is the [Network Architectures](module_name) module leader's email?
+    - Please tell the email of [Protocols](module_name) module teacher.
+    - What is the [Protocols and Architectures](module_name) module leader's email?
+    - What is the [Architectures](module_name) module leader's email?
+    - What is the [ADT](module_name) module leader's email?
+    - What is the [Advanced](module_name) module leader's email?
+    - Module tutor email of [Advanced Database](module_name)?
+    - Module tutor email of [Advanced Topics in Database](module_name)?
+    - Email of the [Database](module_name) tutor
+    - What is the [Database Topics](module_name) module leader's email?
+    - What is the [Concurrency](module_name) module leader's email?
+    - Do you know [Conc](module_name) module teacher email?
+    - Email of the [CSP](module_name) tutor
+    - What is the [Computer Science](module_name) module leader's email?
+    - Do you know [Computer Project](module_name) module teacher email?
+    - Module tutor email of [CS Project](module_name)?
+    - Do you know [Project](module_name) module teacher email?
+    - Module tutor email of [SQ](module_name)?
+    - Email of the [Software](module_name) tutor
+    - Module tutor email of [Software Quality](module_name)?
+    - Do you know [Quality](module_name) module teacher email?
+    - What is the [AaRA](module_name) module leader's email?
+    - What is the [AI](module_name) module leader's email?
+    - Do you know [AI Robotic](module_name) module teacher email?
+    - Module tutor email of [AI Applications](module_name)?
+    - Do you know [Robotic](module_name) module teacher email?
+    - What is the [Robotic and AI](module_name) module leader's email?
+    - Module tutor email of [Robotic AI](module_name)?
+    - What is the [Robotic Applications](module_name) module leader's email?
+    - What is the [MLaNC](module_name) module leader's email?
+    - What is the [Machine](module_name) module leader's email?
+    - Do you know [Machine Learning](module_name) module teacher email?
+    - Email of the [ML and Nueral](module_name) tutor
+    - Do you know [Nueral](module_name) module teacher email?
+    - Email of the [Nueral Machine](module_name) tutor
+    - Please tell the email of [Nueral Learning](module_name) module teacher.
+    - What is the [Nueral Computing](module_name) module leader's email?
+    - What is the [AaDS](module_name) module leader's email?
+    - What is the [ADS](module_name) module leader's email?
+    - Please tell the email of [Algorithms](module_name) module teacher.
+    - Do you know [Algorithms Data](module_name) module teacher email?
+    - What is the [Algorithms Structures](module_name) module leader's email?
+    - What is the [Algorithms and DS](module_name) module leader's email?
+    - Please tell the email of [Data Algorithms](module_name) module teacher.
+    - What is the [Data Structures](module_name) module leader's email?
+    - Please tell the email of [OSaN](module_name) module teacher.
+    - What is the [OSN](module_name) module leader's email?
+    - Module tutor email of [OS and N](module_name)?
+    - What is the [Operating Systems](module_name) module leader's email?
+    - Please tell the email of [OS Networks](module_name) module teacher.
+    - What is the [OS and Networks](module_name) module leader's email?
+    - Email of the [AaU](module_name) tutor
+    - What is the [Accessibility](module_name) module leader's email?
+    - What is the [Accessibility Usability](module_name) module leader's email?
+    - Please tell the email of [A and U](module_name) module teacher.
+    - Do you know [AI](module_name) module teacher email?
+    - Do you know [Artificial](module_name) module teacher email?
+    - Do you know [Artificial Intelligence](module_name) module teacher email?
+    - Do you know [DC](module_name) module teacher email?
+    - What is the [Database](module_name) module leader's email?
+    - What is the [CT](module_name) module leader's email?
+    - What is the [Comp Things](module_name) module leader's email?
+    - Email of the [PoLSS](module_name) tutor
+    - Module tutor email of [Large Scale Principles](module_name)?
+    - Module tutor email of [LS Principles](module_name)?
+    - Please tell the email of [Systems Principles](module_name) module teacher.
+- intent: module_leader
+  examples: |
+    - Who is the module leader?
+    - What is the name of the leader?
+    - Can you tell the name of the leader?
+    - and his name?
+    - what is his name?
+    - what is her name?
+    - can you tell the name?
+    - What is the name of the programme leader?
+    - Who is [Project Planning](module_name) module leader?
+    - can you tell the name of [Computer System Security](module_name) module leader?
+    - Who is module leader of [Constructive Artificial Intelligence](module_name) module?
+    - Who is the module leader of [Cyber  Security](module_name)?
+    - Module leader name of [Artificial  Life](module_name)?
+    - Can you tell the name of the [Embedded Systems Development](module_name) leader?
+    - Can you tell the name of the [Programming Paradigms](module_name) leader?
+    - can you tell the name of [Software Engineering Project](module_name) module leader?
+    - can you tell the name of [Object Orientated Development](module_name) module leader?
+    - Module leader name of [Network Protocols and Architectures](module_name)?
+    - What is the name of the [Advanced Database Topics](module_name) leader?
+    - Who is module leader of [Concurrency](module_name) module?
+    - What is the name of the programme [Computer Science Project](module_name) leader name?
+    - What is the name of the [Software Quality](module_name) leader?
+    - Module leader name of [AI and Robotic Applications](module_name)?
+    - Who is [Machine Learning and Nueral Computing](module_name) module leader?
+    - Who is the module leader of [Algorithms and Data Structures](module_name)?
+    - Can you tell the name of the [Operating Systems and Networks](module_name) leader?
+    - Who is the module leader of [Accessibility and Usability](module_name)?
+    - Who is module leader of [Artificial Intelligence](module_name) module?
+    - Who is the module leader of [Database Concepts](module_name)?
+    - What is the name of the [Computing Things](module_name) leader?
+    - What is the name of the [Principles of Large Scale Systems](module_name) leader?
+    - what is the name of the module leader?
+    - What is the name of the module leader?
+    - who is the module tutor for [constructive ai](module_name)
+    - who is the module leader for [project planning](module_name)
+    - What is the name of the [project](module_name) leader?
+    - what is his name
+    - who is the module leader of [project planning](module_name)
+    - Name of module leader
+    - name of module leader
+    - Who is the module leader for [PP](module_name)
+    - Module teacher for [Project](module_name)
+    - Can you tell the code of [PP](module_name)?
+    - Please tell the code of [Project](module_name) module.
+    - What is the module code for the module [Project Planning](module_name)?
+    - What is the code of [Planning](module_name)?
+    - Module Teacher for [CSS](module_name).
+    - Can you tell the code of the module [Computer](module_name)?
+    - Please tell the code of [Computer System](module_name) module.
+    - Can you tell the code of the module [Computer Security](module_name)?
+    - What is the module code for the module [System](module_name)?
+    - Can you tell the code of the module [Security](module_name)?
+    - Can you tell the code of [CAI](module_name)?
+    - What is the module code for the module [Constructive AI](module_name)?
+    - Can you tell the code of the module [Constructive Artificial](module_name)?
+    - Module Teacher for [Constructive Intelligence](module_name).
+    - What is the module code for the module [CS](module_name)?
+    - What is the module code for the module [Cyber](module_name)?
+    - What is the code of [Cyber Security](module_name)?
+    - Please tell the code of [Security](module_name) module.
+    - What is the module code for the module [AL](module_name)?
+    - Module Teacher for [Artificial](module_name).
+    - Can you tell the code of the module [Artificial Life](module_name)?
+    - Who is the module teacher for [Life](module_name)?
+    - Please tell the code of [ESD](module_name) module.
+    - Can you tell the code of [Embedded](module_name)?
+    - Can you tell the code of [Embedded Systems](module_name)?
+    - Module Teacher for [Embedded Development](module_name).
+    - Can you tell the code of the module [Systems](module_name)?
+    - What is the code of [PP](module_name)?
+    - Module Teacher for [Programming](module_name).
+    - What is the module code for the module [Programming Paradigms](module_name)?
+    - What is the code of [Paradigms](module_name)?
+    - What is the code of [SEP](module_name)?
+    - Module Teacher for [Software](module_name).
+    - Module Teacher for [Software Engineering](module_name).
+    - Can you tell the code of [Software Project](module_name)?
+    - Module Teacher for [Engineering Project](module_name).
+    - Can you tell the code of the module [Project](module_name)?
+    - Can you tell the code of [OOD](module_name)?
+    - Module Teacher for [Object](module_name).
+    - Module Teacher for [Object Orientated](module_name).
+    - Please tell the code of [Object Development](module_name) module.
+    - Can you tell the code of [NPaA](module_name)?
+    - What is the module code for the module [Network](module_name)?
+    - Can you tell the code of the module [Network Protocols](module_name)?
+    - Please tell the code of [Network Architectures](module_name) module.
+    - Who is the module teacher for [Protocols](module_name)?
+    - Who is the module teacher for [Protocols and Architectures](module_name)?
+    - Can you tell the code of the module [Architectures](module_name)?
+    - Module Teacher for [ADT](module_name).
+    - Please tell the code of [Advanced](module_name) module.
+    - Who is the module teacher for [Advanced Database](module_name)?
+    - Can you tell the code of [Advanced Topics in Database](module_name)?
+    - What is the module code for the module [Database](module_name)?
+    - Can you tell the code of the module [Database Topics](module_name)?
+    - Who is the module teacher for [Concurrency](module_name)?
+    - What is the module code for the module [Conc](module_name)?
+    - Can you tell the code of [CSP](module_name)?
+    - What is the code of [Computer](module_name)?
+    - What is the code of [Computer Science](module_name)?
+    - What is the module code for the module [Computer Project](module_name)?
+    - Can you tell the code of [CS Project](module_name)?
+    - What is the code of [Project](module_name)?
+    - Please tell the code of [SQ](module_name) module.
+    - Who is the module teacher for [Software](module_name)?
+    - Who is the module teacher for [Software Quality](module_name)?
+    - What is the code of [Quality](module_name)?
+    - Module Teacher for [AaRA](module_name).
+    - What is the module code for the module [AI](module_name)?
+    - Can you tell the code of [AI Robotic](module_name)?
+    - What is the code of [AI Applications](module_name)?
+    - Who is the module teacher for [Robotic](module_name)?
+    - What is the code of [Robotic and AI](module_name)?
+    - Please tell the code of [Robotic AI](module_name) module.
+    - What is the code of [Robotic Applications](module_name)?
+    - Can you tell the code of the module [MLaNC](module_name)?
+    - Module Teacher for [Machine](module_name).
+    - What is the module code for the module [Machine Learning](module_name)?
+    - Who is the module teacher for [ML and Nueral](module_name)?
+    - What is the code of [Nueral](module_name)?
+    - What is the code of [Nueral Machine](module_name)?
+    - What is the code of [Nueral Learning](module_name)?
+    - Can you tell the code of [Nueral Computing](module_name)?
+    - Module Teacher for [AaDS](module_name).
+    - Can you tell the code of [ADS](module_name)?
+    - What is the module code for the module [Algorithms](module_name)?
+    - Module Teacher for [Algorithms Data](module_name).
+    - What is the code of [Algorithms Structures](module_name)?
+    - Can you tell the code of [Algorithms and DS](module_name)?
+    - Please tell the code of [Data Algorithms](module_name) module.
+    - Can you tell the code of [Data Structures](module_name)?
+    - Can you tell the code of the module [OSaN](module_name)?
+    - Can you tell the code of the module [OSN](module_name)?
+    - Can you tell the code of the module [OS and N](module_name)?
+    - What is the module code for the module [Operating Systems](module_name)?
+    - Module Teacher for [OS Networks](module_name).
+    - What is the module code for the module [OS and Networks](module_name)?
+    - What is the code of [AaU](module_name)?
+    - Module Teacher for [Accessibility](module_name).
+    - What is the code of [Accessibility Usability](module_name)?
+    - What is the code of [A and U](module_name)?
+    - Can you tell the code of the module [AI](module_name)?
+    - Can you tell the code of [Artificial](module_name)?
+    - Who is the module teacher for [Artificial Intelligence](module_name)?
+    - Who is the module teacher for [DC](module_name)?
+    - Please tell the code of [Database](module_name) module.
+    - Who is the module teacher for [Database Concepts](module_name)?
+    - Can you tell the code of [CT](module_name)?
+    - Who is the module teacher for [Comp Things](module_name)?
+    - Module Teacher for [PoLSS](module_name).
+    - Who is the module teacher for [Large Scale Principles](module_name)?
+    - Please tell the code of [LS Principles](module_name) module.
+    - Please tell the code of [Systems Principles](module_name) module.
+    - Module Teacher for [PoLSS](module_name)
+    - Who is the teacher of [cai](module_name)?
+- intent: module_name
+  examples: |
+    - What subjects does [Paul Morris](module_leader) teach
+    - [PM](module_leader) teach what
+    - [Dr PM](module_leader) teaches tutors
+    - [Paul](module_leader) teches what topics
+    - What subjects does [Dr Paul](module_leader) teach
+    - [P Morris](module_leader) teach what
+    - [Dr P Morris](module_leader) helps in what subject
+    - [Paul M](module_leader) teaches tutors
+    - [Dr Paul M](module_leader) teaches what
+    - What topics [P Morris](module_leader)
+    - What modules does [Dr P Morris](module_leader) teach
+    - What modules does [Paul M](module_leader) teach
+    - [Dr Paul M](module_leader) teches what topics
+    - What topics [Morris](module_leader)
+    - [Dr Morris](module_leader) teches what topics
+    - What field does [Gani Nashi](module_leader) teach
+    - What topics [GN](module_leader)
+    - What modules does [Dr GN](module_leader) teach
+    - [Gani](module_leader) teaches tutors
+    - What modules does [Dr Gani](module_leader) teach
+    - What subjects does [G Nashi](module_leader) teach
+    - What modules does [Dr G Nashi](module_leader) teach
+    - [Gani N](module_leader) teaches what
+    - What modules does [Dr Gani N](module_leader) teach
+    - [G Nashi](module_leader) teach what
+    - What subjects does [Gani N](module_leader) teach
+    - [Dr Gani N](module_leader) teaches tutors
+    - What field does [Nashi](module_leader) teach
+    - [Dr Nashi](module_leader) teach what
+    - [Bente Riegler](module_leader) teaches tutors
+    - What topics [BR](module_leader)
+    - What modules does [Dr BR](module_leader) teach
+    - What subjects does [Bente](module_leader) teach
+    - [Dr Bente](module_leader) helps in what subject
+    - [B Riegler](module_leader) teaches tutors
+    - [Dr B Riegler](module_leader) teaches what
+    - What subjects does [Bente R](module_leader) teach
+    - What modules does [Dr Bente R](module_leader) teach
+    - [B Riegler](module_leader) helps in what subject
+    - [Dr B Riegler](module_leader) teaches tutors
+    - [Bente R](module_leader) teaches tutors
+    - What field does [Dr Bente R](module_leader) teach
+    - [Riegler](module_leader) teach what
+    - [Dr Riegler](module_leader) teaches tutors
+    - [William Spring](module_leader) helps in what subject
+    - [WS](module_leader) helps in what subject
+    - [Dr WS](module_leader) teaches tutors
+    - [William](module_leader) teach what
+    - What field does [Dr William](module_leader) teach
+    - [W Spring](module_leader) teach what
+    - What modules does [Dr W Spring](module_leader) teach
+    - What field does [William S](module_leader) teach
+    - [Dr William S](module_leader) helps in what subject
+    - What field does [W Spring](module_leader) teach
+    - [Dr W Spring](module_leader) teach what
+    - [William S](module_leader) teaches tutors
+    - [Dr William S](module_leader) teaches tutors
+    - [Spring](module_leader) teaches what
+    - [Dr Spring](module_leader) teches what topics
+    - [Jan T Kim](module_leader) teach what
+    - [JTK](module_leader) teaches what
+    - What modules does [Dr JTK](module_leader) teach
+    - What modules does [Jan](module_leader) teach
+    - What topics [Dr Jan](module_leader)
+    - [Jan T](module_leader) teach what
+    - What modules does [Dr Jan T](module_leader) teach
+    - What topics [Jan Kim](module_leader)
+    - [Dr Jan Kim](module_leader) teaches what
+    - [Dr T](module_leader) teach what
+    - [T Jan](module_leader) teaches what
+    - What topics [Dr T Jan](module_leader)
+    - What topics [T Kim](module_leader)
+    - [Dr T Kim](module_leader) teaches what
+    - [Kim](module_leader) teaches what
+    - [Dr Kim](module_leader) teaches what
+    - What topics [Kim Jan](module_leader)
+    - What topics [Dr Kim Jan](module_leader)
+    - [Kim T](module_leader) teach what
+    - What field does [Dr Kim T](module_leader) teach
+    - What modules does [Raiumend Kirner](module_leader) teach
+    - What subjects does [RK](module_leader) teach
+    - [Dr RK](module_leader) teach what
+    - [Raiumend](module_leader) teaches what
+    - [Dr Raiumend](module_leader) teaches what
+    - [R Kirner](module_leader) teach what
+    - What field does [Dr R Kirner](module_leader) teach
+    - What modules does [Raiumend K](module_leader) teach
+    - [Dr Raiumend K](module_leader) teach what
+    - [R Kirner](module_leader) helps in what subject
+    - [Dr R Kirner](module_leader) teaches what
+    - What field does [Raiumend K](module_leader) teach
+    - [Dr Raiumend K](module_leader) teches what topics
+    - What subjects does [Kirner](module_leader) teach
+    - [Dr Kirner](module_leader) teach what
+    - [Peter Lane](module_leader) helps in what subject
+    - [PL](module_leader) helps in what subject
+    - [Dr PL](module_leader) teaches what
+    - [Dr Peter](module_leader) helps in what subject
+    - [P Lane](module_leader) teaches what
+    - What modules does [Dr P Lane](module_leader) teach
+    - What field does [Peter L](module_leader) teach
+    - What subjects does [Dr Peter L](module_leader) teach
+    - What subjects does [P Lane](module_leader) teach
+    - What topics [Dr P Lane](module_leader)
+    - [Peter L](module_leader) helps in what subject
+    - [Dr Peter L](module_leader) teach what
+    - What modules does [Lane](module_leader) teach
+    - What topics [Dr Lane](module_leader)
+    - What field does [Joseph Williams](module_leader) teach
+    - [JW](module_leader) teach what
+    - [Dr JW](module_leader) helps in what subject
+    - [Joseph](module_leader) teaches tutors
+    - [Dr Joseph](module_leader) helps in what subject
+    - [J Williams](module_leader) teach what
+    - What modules does [Dr J Williams](module_leader) teach
+    - [Joseph W](module_leader) teach what
+    - [Dr Joseph W](module_leader) teches what topics
+    - [J Williams](module_leader) teaches what
+    - What subjects does [Joseph W](module_leader) teach
+    - [Dr Joseph W](module_leader) teaches tutors
+    - What subjects does [Williams](module_leader) teach
+    - [Dr Williams](module_leader) teches what topics
+    - [Alexandra Marcyk](module_leader) teaches tutors
+    - What modules does [AM](module_leader) teach
+    - What field does [Dr AM](module_leader) teach
+    - What topics [Alexandra](module_leader)
+    - What field does [Dr Alexandra](module_leader) teach
+    - What modules does [A Marcyk](module_leader) teach
+    - What subjects does [Dr A Marcyk](module_leader) teach
+    - [Alexandra M](module_leader) teaches what
+    - [Dr Alexandra M](module_leader) teaches tutors
+    - What field does [A Marcyk](module_leader) teach
+    - What modules does [Dr A Marcyk](module_leader) teach
+    - What subjects does [Alexandra M](module_leader) teach
+    - What field does [Dr Alexandra M](module_leader) teach
+    - What subjects does [Marcyk](module_leader) teach
+    - [Dr Marcyk](module_leader) teaches what
+    - What modules does [Athanasios Tsokonos](module_leader) teach
+    - What subjects does [AT](module_leader) teach
+    - What topics [Dr AT](module_leader)
+    - What topics [Athanasios](module_leader)
+    - What topics [Dr Athanasios](module_leader)
+    - What modules does [Dr Athanasios Tsokonos](module_leader) teach
+    - What modules does [Tsokonos](module_leader) teach
+    - What subjects does [Dr Tsokonos](module_leader) teach
+    - [Tsokonos Athanasios](module_leader) teaches what
+    - [Dr Tsokonos Athanasios](module_leader) teach what
+    - [Deepak Panday](module_leader) teches what topics
+    - [DP](module_leader) teches what topics
+    - [Dr DP](module_leader) teach what
+    - What topics [D Panday](module_leader)
+    - What field does [Dr D Panday](module_leader) teach
+    - What subjects does [D Panday](module_leader) teach
+    - What modules does [Dr D Panday](module_leader) teach
+    - [Panday](module_leader) helps in what subject
+    - [Dr Panday](module_leader) teches what topics
+    - [Deepak](module_leader) teaches tutors
+    - What topics [Dr Deepak](module_leader)
+    - What topics [Deepak P](module_leader)
+    - [Dr Deepak P](module_leader) teaches what
+    - [Deepak P](module_leader) teches what topics
+    - What subjects does [Dr Deepak P](module_leader) teach
+    - [Depak](module_leader) teach what
+    - [Dr Depak](module_leader) teaches what
+    - What field does [Depak P](module_leader) teach
+    - What field does [Dr Depak P](module_leader) teach
+    - [Dr Depak P](module_leader) teach what
+    - What field does [Manjula Manjunthiah](module_leader) teach
+    - [MM](module_leader) teaches what
+    - What subjects does [Dr MM](module_leader) teach
+    - [Manjula](module_leader) helps in what subject
+    - [Dr Manjula](module_leader) helps in what subject
+    - What topics [M Manjunthiah](module_leader)
+    - What field does [Dr M Manjunthiah](module_leader) teach
+    - [Manjula M](module_leader) teaches tutors
+    - What subjects does [Dr Manjula M](module_leader) teach
+    - What modules does [Dr M Manjunthiah](module_leader) teach
+    - [Dr Manjula M](module_leader) teaches tutors
+    - [Manjunthiah](module_leader) helps in what subject
+    - [Dr Manjunthiah](module_leader) helps in what subject
+    - What field does [Nathan Baddoo](module_leader) teach
+    - [NB](module_leader) teaches what
+    - What subjects does [Dr NB](module_leader) teach
+    - [Nathan](module_leader) helps in what subject
+    - [Dr Nathan](module_leader) teaches tutors
+    - What topics [N Baddoo](module_leader)
+    - [Dr N Baddoo](module_leader) teach what
+    - [Nathan B](module_leader) teaches tutors
+    - [Dr Nathan B](module_leader) helps in what subject
+    - [N Baddoo](module_leader) teach what
+    - What subjects does [Dr N Baddoo](module_leader) teach
+    - [Nathan B](module_leader) teches what topics
+    - What topics [Baddoo](module_leader)
+    - [Dr Baddoo](module_leader) teaches what
+    - What subjects does [Manal Helal](module_leader) teach
+    - What field does [MH](module_leader) teach
+    - [Dr MH](module_leader) teach what
+    - [Manal](module_leader) teaches what
+    - What topics [Dr Manal](module_leader)
+    - What modules does [M Helal](module_leader) teach
+    - [Dr M Helal](module_leader) teach what
+    - What field does [Manal H](module_leader) teach
+    - What field does [Dr Manal H](module_leader) teach
+    - [M Helal](module_leader) helps in what subject
+    - [Dr M Helal](module_leader) helps in what subject
+    - [Manal H](module_leader) teches what topics
+    - [Dr Manal H](module_leader) teach what
+    - [Helal](module_leader) teach what
+    - What subjects does [Dr Helal](module_leader) teach
+    - What subjects does [Volker Stueber](module_leader) teach
+    - What modules does [VS](module_leader) teach
+    - [Dr VS](module_leader) helps in what subject
+    - [Volker](module_leader) helps in what subject
+    - What topics [Dr Volker](module_leader)
+    - [V Stueber](module_leader) teaches tutors
+    - What field does [Dr V Stueber](module_leader) teach
+    - [Volker S](module_leader) teach what
+    - [Dr Volker S](module_leader) helps in what subject
+    - What subjects does [V Stueber](module_leader) teach
+    - What topics [Dr V Stueber](module_leader)
+    - [Volker S](module_leader) teaches what
+    - [Dr Volker S](module_leader) teches what topics
+    - [Stueber](module_leader) teach what
+    - What topics [Dr Stueber](module_leader)
+    - [Daniel Polani](module_leader) teaches what
+    - What field does [Daniel](module_leader) teach
+    - What subjects does [Dr Daniel](module_leader) teach
+    - [D Polani](module_leader) teach what
+    - What modules does [Dr D Polani](module_leader) teach
+    - [Daniel P](module_leader) teches what topics
+    - What field does [Dr Daniel P](module_leader) teach
+    - [D Polani](module_leader) teaches tutors
+    - What field does [Dr D Polani](module_leader) teach
+    - What field does [Daniel P](module_leader) teach
+    - [Dr Daniel P](module_leader) teach what
+    - What topics [Polani](module_leader)
+    - What topics [Dr Polani](module_leader)
+    - [Azita Pourgashm](module_leader) teaches what
+    - [AP](module_leader) teches what topics
+    - [Dr AP](module_leader) teaches what
+    - [Azita](module_leader) teches what topics
+    - [Dr Azita](module_leader) teaches tutors
+    - [A Pourgashm](module_leader) teach what
+    - [Dr A Pourgashm](module_leader) teches what topics
+    - What topics [Azita P](module_leader)
+    - [Dr Azita P](module_leader) teches what topics
+    - [A Pourgashm](module_leader) helps in what subject
+    - [Dr A Pourgashm](module_leader) helps in what subject
+    - What field does [Azita P](module_leader) teach
+    - [Dr Azita P](module_leader) helps in what subject
+    - [Pourgashm](module_leader) teches what topics
+    - What subjects does [Dr Pourgashm](module_leader) teach
+    - What subjects does [Susan Attwood](module_leader) teach
+    - What subjects does [SA](module_leader) teach
+    - [Dr SA](module_leader) teaches what
+    - What modules does [Susan](module_leader) teach
+    - [Dr Susan](module_leader) teaches what
+    - [S Attwood](module_leader) helps in what subject
+    - What subjects does [Dr S Attwood](module_leader) teach
+    - [Susan A](module_leader) teaches tutors
+    - [Dr Susan A](module_leader) helps in what subject
+    - [S Attwood](module_leader) teaches tutors
+    - What topics [Dr S Attwood](module_leader)
+    - What subjects does [Susan A](module_leader) teach
+    - What field does [Dr Susan A](module_leader) teach
+    - [Attwood](module_leader) helps in what subject
+    - [Dr Attwood](module_leader) teaches what
+- intent: credits
+  examples: |
+    - How many credits is the module [Principles of Large Scale Systems](module_name) have?
+    - How many credits does [Large Scale Principles](module_name) have?
+    - can you tell the credits for [Project Planning](module_name) module?
+    - numbr of credits for [PP](module_name) module?
+    - Number of [Project](module_name) credits?
+    - Number of [Project Planning](module_name) credits?
+    - What is the number of the credits for [Planning](module_name)?
+    - What are the numebr of credits of [Computer System Security](module_name)?
+    - Number of [CSS](module_name) credits?
+    - What are the numebr of credits of [Computer](module_name)?
+    - Number of [Computer System](module_name) credits?
+    - Number of [Computer Security](module_name) credits?
+    - what is the number of [System](module_name) module credits?
+    - Number of [Security](module_name) credits?
+    - can you tell the credits for [Constructive Artificial Intelligence](module_name) module?
+    - What is the number of the credits for [CAI](module_name)?
+    - can you tell the credits for [Constructive AI](module_name) module?
+    - can you tell the credits for [Constructive Artificial](module_name) module?
+    - What are the numebr of credits of [Constructive Intelligence](module_name)?
+    - Number of [Cyber Security](module_name) credits?
+    - What are the numebr of credits of [CS](module_name)?
+    - What are the numebr of credits of [Cyber](module_name)?
+    - what is the number of [Cyber Security](module_name) module credits?
+    - What is the number of the credits for [Security](module_name)?
+    - What is the number of the credits for [Artificial Life](module_name)?
+    - What is the number of the credits for [AL](module_name)?
+    - can you tell the credits for [Artificial](module_name) module?
+    - can you tell the credits for [Artificial Life](module_name) module?
+    - Number of [Life](module_name) credits?
+    - What is the number of the credits for [Embedded Systems Development](module_name)?
+    - numbr of credits for [ESD](module_name) module?
+    - How many credits does [Embedded](module_name) have?
+    - Can you tell the credits for the [Embedded Systems](module_name) module?
+    - What is the number of the credits for [Embedded Development](module_name)?
+    - What is the number of the credits for [Systems](module_name)?
+    - what is the number of [Programming Paradigms](module_name) module credits?
+    - Number of [PP](module_name) credits?
+    - numbr of credits for [Programming](module_name) module?
+    - Number of [Programming Paradigms](module_name) credits?
+    - can you tell the credits for [Paradigms](module_name) module?
+    - What are the numebr of credits of [Software Engineering Project](module_name)?
+    - How many credits does [SEP](module_name) have?
+    - How many credits does [Software](module_name) have?
+    - Number of [Software Engineering](module_name) credits?
+    - Can you tell the credits for the [Software Project](module_name) module?
+    - what is the number of [Engineering Project](module_name) module credits?
+    - what is the number of [Project](module_name) module credits?
+    - numbr of credits for [Object Orientated Development](module_name) module?
+    - What is the number of the credits for [OOD](module_name)?
+    - What is the number of the credits for [Object](module_name)?
+    - Can you tell the credits for the [Object Orientated](module_name) module?
+    - What are the numebr of credits of [Object Development](module_name)?
+    - What are the numebr of credits of [Network Protocols and Architectures](module_name)?
+    - What is the number of the credits for [NPaA](module_name)?
+    - what is the number of [Network](module_name) module credits?
+    - Number of [Network Protocols](module_name) credits?
+    - How many credits does [Network Architectures](module_name) have?
+    - How many credits does [Protocols](module_name) have?
+    - what is the number of [Protocols and Architectures](module_name) module credits?
+    - What are the numebr of credits of [Architectures](module_name)?
+    - can you tell the credits for [Advanced Database Topics](module_name) module?
+    - What is the number of the credits for [ADT](module_name)?
+    - Number of [Advanced](module_name) credits?
+    - can you tell the credits for [Advanced Database](module_name) module?
+    - Can you tell the credits for the [Advanced Topics in Database](module_name) module?
+    - What is the number of the credits for [Database](module_name)?
+    - How many credits does [Database Topics](module_name) have?
+    - what is the number of [Concurrency](module_name) module credits?
+    - can you tell the credits for [Concurrency](module_name) module?
+    - How many credits does [Conc](module_name) have?
+    - can you tell the credits for [Computer Science Project](module_name) module?
+    - can you tell the credits for [CSP](module_name) module?
+    - What is the number of the credits for [Computer](module_name)?
+    - How many credits does [Computer Science](module_name) have?
+    - Can you tell the credits for the [Computer Project](module_name) module?
+    - numbr of credits for [CS Project](module_name) module?
+    - What are the numebr of credits of [Project](module_name)?
+    - what is the number of [Software Quality](module_name) module credits?
+    - Can you tell the credits for the [SQ](module_name) module?
+    - What are the numebr of credits of [Software](module_name)?
+    - What is the number of the credits for [Software Quality](module_name)?
+    - can you tell the credits for [Quality](module_name) module?
+    - How many credits does [AI and Robotic Applications](module_name) have?
+    - what is the number of [AaRA](module_name) module credits?
+    - numbr of credits for [AI](module_name) module?
+    - What are the numebr of credits of [AI Robotic](module_name)?
+    - Can you tell the credits for the [AI Applications](module_name) module?
+    - numbr of credits for [Robotic](module_name) module?
+    - Can you tell the credits for the [Robotic and AI](module_name) module?
+    - Number of [Robotic AI](module_name) credits?
+    - numbr of credits for [Robotic Applications](module_name) module?
+    - can you tell the credits for [Machine Learning and Nueral Computing](module_name) module?
+    - What is the number of the credits for [MLaNC](module_name)?
+    - Number of [Machine](module_name) credits?
+    - What are the numebr of credits of [Machine Learning](module_name)?
+    - Can you tell the credits for the [ML and Nueral](module_name) module?
+    - What are the numebr of credits of [Nueral](module_name)?
+    - What is the number of the credits for [Nueral Machine](module_name)?
+    - can you tell the credits for [Nueral Learning](module_name) module?
+    - numbr of credits for [Nueral Computing](module_name) module?
+    - What is the number of the credits for [Algorithms and Data Structures](module_name)?
+    - numbr of credits for [AaDS](module_name) module?
+    - Can you tell the credits for the [ADS](module_name) module?
+    - What are the numebr of credits of [Algorithms](module_name)?
+    - numbr of credits for [Algorithms Data](module_name) module?
+    - numbr of credits for [Algorithms Structures](module_name) module?
+    - Can you tell the credits for the [Algorithms and DS](module_name) module?
+    - can you tell the credits for [Data Algorithms](module_name) module?
+    - what is the number of [Data Structures](module_name) module credits?
+    - What is the number of the credits for [Operating Systems and Networks](module_name)?
+    - what is the number of [OSaN](module_name) module credits?
+    - Can you tell the credits for the [OSN](module_name) module?
+    - What are the numebr of credits of [OS and N](module_name)?
+    - How many credits does [Operating Systems](module_name) have?
+    - What is the number of the credits for [OS Networks](module_name)?
+    - What is the number of the credits for [OS and Networks](module_name)?
+    - Can you tell the credits for the [Accessibility and Usability](module_name) module?
+    - numbr of credits for [AaU](module_name) module?
+    - Can you tell the credits for the [Accessibility](module_name) module?
+    - Can you tell the credits for the [Accessibility Usability](module_name) module?
+    - How many credits does [A and U](module_name) have?
+    - Can you tell the credits for the [Artificial Intelligence](module_name) module?
+    - What is the number of the credits for [AI](module_name)?
+    - How many credits does [Artificial](module_name) have?
+    - What are the numebr of credits of [Artificial Intelligence](module_name)?
+    - What are the numebr of credits of [Database Concepts](module_name)?
+    - What are the numebr of credits of [DC](module_name)?
+    - What are the numebr of credits of [Database](module_name)?
+    - What are the numebr of credits of [Computing Things](module_name)?
+    - What is the number of the credits for [CT](module_name)?
+    - can you tell the credits for [Comp Things](module_name) module?
+    - numbr of credits for [Principles of Large Scale Systems](module_name) module?
+    - How many credits does [PoLSS](module_name) have?
+    - what is the number of [LS Principles](module_name) module credits?
+    - What is the number of the credits for [Systems Principles](module_name)?
+- intent: assg
+  examples: |
+    - Number of [Project Planning](module_name) assignments?
+    - number of [PP](module_name) assgs?
+    - what is the number of [Project](module_name) module assg?
+    - number of [Project Planning](module_name) assgs?
+    - can you tell the assg for [Planning](module_name) module?
+    - What are the number of assignments of [Computer System Security](module_name)?
+    - What is the number of the assg for [CSS](module_name)?
+    - number of [Computer](module_name) assgs?
+    - Number of [Computer System](module_name) assignments?
+    - number of [Computer Security](module_name) assgs?
+    - Number of [System](module_name) assignments?
+    - Num of assgs for [Security](module_name)?
+    - How many assignments does [Constructive Artificial Intelligence](module_name) have?
+    - numbr of assignments for [CAI](module_name) module?
+    - can you tell the assg for [Constructive AI](module_name) module?
+    - What is the number of the assg for [Constructive Artificial](module_name)?
+    - can you tell the assg for [Constructive Intelligence](module_name) module?
+    - numbr of assignments for [Cyber Security](module_name) module?
+    - Can you tell the number of [CS](module_name) assignments?
+    - How many assignments does [Cyber](module_name) have?
+    - Num of assgs for [Cyber Security](module_name)?
+    - What is the number of the assg for [Security](module_name)?
+    - What are the number of assignments of [Artificial Life](module_name)?
+    - How many assignments does [AL](module_name) have?
+    - What are the number of assignments of [Artificial](module_name)?
+    - Can you tell the number of [Artificial Life](module_name) assignments?
+    - What is the number of the assg for [Life](module_name)?
+    - can you tell the assg for [Embedded Systems Development](module_name) module?
+    - Number of [ESD](module_name) assignments?
+    - Num of assgs for [Embedded](module_name)?
+    - can you tell the assg for [Embedded Systems](module_name) module?
+    - what is the number of [Embedded Development](module_name) module assg?
+    - Num of assgs for [Systems](module_name)?
+    - What are the number of assignments of [Programming Paradigms](module_name)?
+    - Number of [PP](module_name) assignments?
+    - can you tell the assg for [Programming](module_name) module?
+    - number of [Programming Paradigms](module_name) assgs?
+    - How many assignments does [Paradigms](module_name) have?
+    - What is the number of the assg for [Software Engineering Project](module_name)?
+    - number of [SEP](module_name) assgs?
+    - numbr of assignments for [Software](module_name) module?
+    - Num of assgs for [Software Engineering](module_name)?
+    - How many assignments does [Software Project](module_name) have?
+    - What are the number of assignments of [Engineering Project](module_name)?
+    - numbr of assignments for [Project](module_name) module?
+    - How many assignments does [Object Orientated Development](module_name) have?
+    - what is the number of [OOD](module_name) module assg?
+    - Number of [Object](module_name) assignments?
+    - numbr of assignments for [Object Orientated](module_name) module?
+    - How many assignments does [Object Development](module_name) have?
+    - Num of assgs for [Network Protocols and Architectures](module_name)?
+    - numbr of assignments for [NPaA](module_name) module?
+    - How many assignments does [Network](module_name) have?
+    - Number of [Network Protocols](module_name) assignments?
+    - numbr of assignments for [Network Architectures](module_name) module?
+    - what is the number of [Protocols](module_name) module assg?
+    - what is the number of [Protocols and Architectures](module_name) module assg?
+    - Can you tell the number of [Architectures](module_name) assignments?
+    - What are the number of assignments of [Advanced Database Topics](module_name)?
+    - What is the number of the assg for [ADT](module_name)?
+    - Number of [Advanced](module_name) assignments?
+    - What is the number of the assg for [Advanced Database](module_name)?
+    - can you tell the assg for [Advanced Topics in Database](module_name) module?
+    - number of [Database](module_name) assgs?
+    - numbr of assignments for [Database Topics](module_name) module?
+    - can you tell the assg for [Concurrency](module_name) module?
+    - Number of [Concurrency](module_name) assignments?
+    - What are the number of assignments of [Conc](module_name)?
+    - Can you tell the number of [Computer Science Project](module_name) assignments?
+    - Num of assgs for [CSP](module_name)?
+    - what is the number of [Computer Science](module_name) module assg?
+    - What are the number of assignments of [Computer Project](module_name)?
+    - can you tell the assg for [CS Project](module_name) module?
+    - can you tell the assg for [Project](module_name) module?
+    - What are the number of assignments of [Software Quality](module_name)?
+    - What is the number of the assg for [SQ](module_name)?
+    - can you tell the assg for [Software](module_name) module?
+    - number of [Software Quality](module_name) assgs?
+    - Num of assgs for [Quality](module_name)?
+    - Number of [AI and Robotic Applications](module_name) assignments?
+    - How many assignments does [AaRA](module_name) have?
+    - can you tell the assg for [AI](module_name) module?
+    - Can you tell the number of [AI Robotic](module_name) assignments?
+    - What is the number of the assg for [AI Applications](module_name)?
+    - number of [Robotic](module_name) assgs?
+    - numbr of assignments for [Robotic and AI](module_name) module?
+    - Number of [Robotic AI](module_name) assignments?
+    - can you tell the assg for [Robotic Applications](module_name) module?
+    - Num of assgs for [Machine Learning and Nueral Computing](module_name)?
+    - What are the number of assignments of [MLaNC](module_name)?
+    - number of [Machine](module_name) assgs?
+    - numbr of assignments for [Machine Learning](module_name) module?
+    - How many assignments does [ML and Nueral](module_name) have?
+    - How many assignments does [Nueral](module_name) have?
+    - Number of [Nueral Machine](module_name) assignments?
+    - what is the number of [Nueral Learning](module_name) module assg?
+    - numbr of assignments for [Nueral Computing](module_name) module?
+    - can you tell the assg for [Algorithms and Data Structures](module_name) module?
+    - How many assignments does [AaDS](module_name) have?
+    - numbr of assignments for [ADS](module_name) module?
+    - can you tell the assg for [Algorithms](module_name) module?
+    - numbr of assignments for [Algorithms Data](module_name) module?
+    - What are the number of assignments of [Algorithms Structures](module_name)?
+    - what is the number of [Algorithms and DS](module_name) module assg?
+    - Number of [Data Algorithms](module_name) assignments?
+    - What are the number of assignments of [Data Structures](module_name)?
+    - Number of [Operating Systems and Networks](module_name) assignments?
+    - Can you tell the number of [OSaN](module_name) assignments?
+    - number of [OSN](module_name) assgs?
+    - can you tell the assg for [OS and N](module_name) module?
+    - What are the number of assignments of [Operating Systems](module_name)?
+    - Number of [OS Networks](module_name) assignments?
+    - What are the number of assignments of [OS and Networks](module_name)?
+    - Num of assgs for [Accessibility and Usability](module_name)?
+    - Number of [AaU](module_name) assignments?
+    - what is the number of [Accessibility](module_name) module assg?
+    - Number of [Accessibility Usability](module_name) assignments?
+    - numbr of assignments for [A and U](module_name) module?
+    - Can you tell the number of [Artificial Intelligence](module_name) assignments?
+    - what is the number of [AI](module_name) module assg?
+    - number of [Artificial](module_name) assgs?
+    - How many assignments does [Artificial Intelligence](module_name) have?
+    - numbr of assignments for [Database Concepts](module_name) module?
+    - Can you tell the number of [DC](module_name) assignments?
+    - What is the number of the assg for [Database](module_name)?
+    - Number of [Database Concepts](module_name) assignments?
+    - Can you tell the number of [Computing Things](module_name) assignments?
+    - number of [CT](module_name) assgs?
+    - Number of [Comp Things](module_name) assignments?
+    - What is the number of the assg for [Principles of Large Scale Systems](module_name)?
+    - number of [PoLSS](module_name) assgs?
+    - Number of [Large Scale Principles](module_name) assignments?
+    - Num of assgs for [LS Principles](module_name)?
+    - How many assignments does [Systems Principles](module_name) have?
+- intent: assg_weight
+  examples: |
+    - can you tell the assg weightage for [Project Planning](module_name) module?
+    - how much is the assignments worth of [PP](module_name)?
+    - What is the weightage of [Project](module_name) assignments?
+    - how much is the assignments worth of [Project Planning](module_name)?
+    - what is the worth of [Planning](module_name) module assg?
+    - percentage of [Computer System Security](module_name) assignments?
+    - What is the weightage of the assg for [CSS](module_name)?
+    - what is the worth of [Computer](module_name) module assg?
+    - percentage of [Computer System](module_name) assgs weightage?
+    - can you tell the assg weightage for [Computer Security](module_name) module?
+    - can you tell the assg weightage for [System](module_name) module?
+    - what is the worth of [Security](module_name) module assg?
+    - percentage of [Constructive Artificial Intelligence](module_name) assignments?
+    - percentage of [CAI](module_name) assignments?
+    - can you tell the assg weightage for [Constructive AI](module_name) module?
+    - percentage of [Constructive Artificial](module_name) assgs weightage?
+    - %age of assignments for [Constructive Intelligence](module_name) module?
+    - what is the worth of [Cyber Security](module_name) module assg?
+    - what is the worth of [CS](module_name) module assg?
+    - can you tell the assg weightage for [Cyber](module_name) module?
+    - What is the weightage of the assg for [Cyber Security](module_name)?
+    - how much is the assignments worth of [Security](module_name)?
+    - how much is the assignments worth of [Artificial Life](module_name)?
+    - %age of assignments for [AL](module_name) module?
+    - What is the weightage of the assg for [Artificial](module_name)?
+    - What is the weightage of [Artificial Life](module_name) assignments?
+    - what is the worth of [Life](module_name) module assg?
+    - weightage of assgs for [Embedded Systems Development](module_name)?
+    - What is the weightage of the assg for [ESD](module_name)?
+    - percentage of [Embedded](module_name) assgs weightage?
+    - weightage of assgs for [Embedded Systems](module_name)?
+    - Can you tell the percentage of [Embedded Development](module_name) assignments weight?
+    - what is the worth of [Systems](module_name) module assg?
+    - %age of assignments for [Programming Paradigms](module_name) module?
+    - %age of assignments for [PP](module_name) module?
+    - What is the weightage of [Programming](module_name) assignments?
+    - how much is the assignments worth of [Programming Paradigms](module_name)?
+    - weightage of assgs for [Paradigms](module_name)?
+    - What is the weightage of the assg for [Software Engineering Project](module_name)?
+    - What is the weightage of [SEP](module_name) assignments?
+    - What is the weightage of the assg for [Software](module_name)?
+    - Can you tell the percentage of [Software Engineering](module_name) assignments weight?
+    - what is the worth of [Software Project](module_name) module assg?
+    - what is the worth of [Engineering Project](module_name) module assg?
+    - %age of assignments for [Project](module_name) module?
+    - what is the worth of [Object Orientated Development](module_name) module assg?
+    - Can you tell the percentage of [OOD](module_name) assignments weight?
+    - %age of assignments for [Object](module_name) module?
+    - can you tell the assg weightage for [Object Orientated](module_name) module?
+    - can you tell the assg weightage for [Object Development](module_name) module?
+    - how much is the assignments worth of [Network Protocols and Architectures](module_name)?
+    - %age of assignments for [NPaA](module_name) module?
+    - What is the weightage of [Network](module_name) assignments?
+    - percentage of [Network Protocols](module_name) assgs weightage?
+    - percentage of [Network Architectures](module_name) assignments?
+    - %age of assignments for [Protocols](module_name) module?
+    - What is the weightage of [Protocols and Architectures](module_name) assignments?
+    - What is the weightage of the assg for [Architectures](module_name)?
+    - what is the worth of [Advanced Database Topics](module_name) module assg?
+    - percentage of [ADT](module_name) assignments?
+    - What is the weightage of [Advanced](module_name) assignments?
+    - percentage of [Advanced Database](module_name) assignments?
+    - how much is the assignments worth of [Advanced Topics in Database](module_name)?
+    - Can you tell the percentage of [Database](module_name) assignments weight?
+    - What is the weightage of [Database Topics](module_name) assignments?
+    - Can you tell the percentage of [Concurrency](module_name) assignments weight?
+    - how much is the assignments worth of [Concurrency](module_name)?
+    - can you tell the assg weightage for [Conc](module_name) module?
+    - percentage of [Computer Science Project](module_name) assgs weightage?
+    - Can you tell the percentage of [CSP](module_name) assignments weight?
+    - can you tell the assg weightage for [Computer Science](module_name) module?
+    - percentage of [Computer Project](module_name) assgs weightage?
+    - percentage of [CS Project](module_name) assgs weightage?
+    - what is the worth of [Software Quality](module_name) module assg?
+    - Can you tell the percentage of [SQ](module_name) assignments weight?
+    - percentage of [Software](module_name) assgs weightage?
+    - weightage of assgs for [Software Quality](module_name)?
+    - how much is the assignments worth of [Quality](module_name)?
+    - %age of assignments for [AI and Robotic Applications](module_name) module?
+    - What is the weightage of the assg for [AaRA](module_name)?
+    - can you tell the assg weightage for [AI](module_name) module?
+    - percentage of [AI Robotic](module_name) assignments?
+    - %age of assignments for [AI Applications](module_name) module?
+    - What is the weightage of the assg for [Robotic](module_name)?
+    - percentage of [Robotic and AI](module_name) assignments?
+    - %age of assignments for [Robotic AI](module_name) module?
+    - %age of assignments for [Robotic Applications](module_name) module?
+    - can you tell the assg weightage for [Machine Learning and Nueral Computing](module_name) module?
+    - weightage of assgs for [MLaNC](module_name)?
+    - weightage of assgs for [Machine](module_name)?
+    - Can you tell the percentage of [Machine Learning](module_name) assignments weight?
+    - Can you tell the percentage of [ML and Nueral](module_name) assignments weight?
+    - %age of assignments for [Nueral](module_name) module?
+    - percentage of [Nueral Machine](module_name) assgs weightage?
+    - percentage of [Nueral Learning](module_name) assgs weightage?
+    - percentage of [Nueral Computing](module_name) assgs weightage?
+    - percentage of [Algorithms and Data Structures](module_name) assignments?
+    - Can you tell the percentage of [AaDS](module_name) assignments weight?
+    - percentage of [ADS](module_name) assignments?
+    - %age of assignments for [Algorithms](module_name) module?
+    - what is the worth of [Algorithms Data](module_name) module assg?
+    - What is the weightage of the assg for [Algorithms Structures](module_name)?
+    - %age of assignments for [Algorithms and DS](module_name) module?
+    - %age of assignments for [Data Algorithms](module_name) module?
+    - %age of assignments for [Data Structures](module_name) module?
+    - can you tell the assg weightage for [Operating Systems and Networks](module_name) module?
+    - how much is the assignments worth of [OSaN](module_name)?
+    - can you tell the assg weightage for [OSN](module_name) module?
+    - how much is the assignments worth of [OS and N](module_name)?
+    - what is the worth of [Operating Systems](module_name) module assg?
+    - Can you tell the percentage of [OS Networks](module_name) assignments weight?
+    - What is the weightage of the assg for [OS and Networks](module_name)?
+    - percentage of [Accessibility and Usability](module_name) assignments?
+    - %age of assignments for [AaU](module_name) module?
+    - What is the weightage of the assg for [Accessibility](module_name)?
+    - Can you tell the percentage of [Accessibility Usability](module_name) assignments weight?
+    - What is the weightage of the assg for [A and U](module_name)?
+    - can you tell the assg weightage for [Artificial Intelligence](module_name) module?
+    - percentage of [AI](module_name) assgs weightage?
+    - can you tell the assg weightage for [Artificial](module_name) module?
+    - What is the weightage of the assg for [Database Concepts](module_name)?
+    - percentage of [DC](module_name) assignments?
+    - What is the weightage of the assg for [Database](module_name)?
+    - weightage of assgs for [Database Concepts](module_name)?
+    - Can you tell the percentage of [Computing Things](module_name) assignments weight?
+    - percentage of [CT](module_name) assignments?
+    - percentage of [Comp Things](module_name) assgs weightage?
+    - what is the worth of [Principles of Large Scale Systems](module_name) module assg?
+    - percentage of [PoLSS](module_name) assgs weightage?
+    - can you tell the assg weightage for [Large Scale Principles](module_name) module?
+    - what is the worth of [LS Principles](module_name) module assg?
+    - percentage of [Systems Principles](module_name) assgs weightage?
+- intent: ovr_prog_leader
+  examples: |
+    - Who is the overall program leader?
+    - can you tell the name of the overall program leader?
+    - Who is the program leader of BSC Computer Science?
+    - What is the name of the programme leader?
+    - Name the program leader for Bachelors in computer science
+    - programme leader name for BSCS
+    - who is the overall program leader of computer science bachelors program
+    - programme leader of BS computer science
+    - name the bscs programme leader
+    - is Dr Atwood the program leader of BSC Computer Science?
+    - What is the name and email of the BSC computer science programme leader?
+    - What is the email of the BSCS programme leader?
+    - can you tell the email of the overall programme leader?
+    - please tell the email of the overall program leader of computer science.
+    - who is the current program leader of Bachelors in computer science?
+- synonym: Principles of Large Scale Systems
+  examples: |
+    - PoLSS
+    - Large Scale Principles
+    - LS Principles
+    - Systems Principles
+- synonym: Programming Paradigms
+  examples: |
+    - PP
+    - Programming
+    - Paradigms
+- synonym: Computer Science Project
+  examples: |
+    - Project
+    - Computer
+    - CSP
+    - Computer Science
+    - Computer Project
+    - CS Project
+- synonym: Project Planning
+  examples: |
+    - Planning
+- synonym: Computer System Security
+  examples: |
+    - CSS
+    - Computer System
+    - Computer Security
+    - System
+- synonym: Cyber Security
+  examples: |
+    - Security
+    - CS
+    - Cyber
+- synonym: Constructive Artificial Intelligence
+  examples: |
+    - CAI
+    - Constructive AI
+    - Constructive Artificial
+    - Constructive Intelligence
+    - cai
+- synonym: Artificial Life
+  examples: |
+    - AL
+    - Life
+- synonym: Artificial Intelligence
+  examples: |
+    - Artificial
+    - AI
+- synonym: Embedded Systems Development
+  examples: |
+    - ESD
+    - Embedded
+    - Embedded Systems
+    - Embedded Development
+    - Systems
+- synonym: Software Engineering Project
+  examples: |
+    - SEP
+    - Software Engineering
+    - Software Project
+    - Engineering Project
+- synonym: Software Quality
+  examples: |
+    - Software
+    - SQ
+    - Quality
+- synonym: Object Orientated Development
+  examples: |
+    - OOD
+    - Object
+    - Object Orientated
+    - Object Development
+- synonym: Network Protocols and Architectures
+  examples: |
+    - NPaA
+    - Network
+    - Network Protocols
+    - Network Architectures
+    - Protocols
+    - Protocols and Architectures
+    - Architectures
+- synonym: Advanced Database Topics
+  examples: |
+    - ADT
+    - Advanced
+    - Advanced Database
+    - Advanced Topics in Database
+    - Database Topics
+- synonym: Database Concepts
+  examples: |
+    - Database
+    - DC
+- synonym: Concurrency
+  examples: |
+    - Conc
+- synonym: AI and Robotic Applications
+  examples: |
+    - AaRA
+    - AI Robotic
+    - AI Applications
+    - Robotic
+    - Robotic and AI
+    - Robotic AI
+    - Robotic Applications
+- synonym: Machine Learning and Nueral Computing
+  examples: |
+    - MLaNC
+    - Machine
+    - Machine Learning
+    - ML and Nueral
+    - Nueral
+    - Nueral Machine
+    - Nueral Learning
+    - Nueral Computing
+- synonym: Algorithms and Data Structures
+  examples: |
+    - AaDS
+    - ADS
+    - Algorithms
+    - Algorithms Data
+    - Algorithms Structures
+    - Algorithms and DS
+    - Data Algorithms
+    - Data Structures
+- synonym: Operating Systems and Networks
+  examples: |
+    - OSaN
+    - OSN
+    - OS and N
+    - Operating Systems
+    - OS Networks
+    - OS and Networks
+- synonym: Accessibility and Usability
+  examples: |
+    - AaU
+    - Accessibility
+    - Accessibility Usability
+    - A and U
+- synonym: Computing Things
+  examples: |
+    - CT
+    - Comp Things
+- synonym: Paul Morris
+  examples: |
+    - PM
+    - Dr PM
+    - Paul
+    - Dr Paul
+    - P Morris
+    - Dr P Morris
+    - Paul M
+    - Dr Paul M
+    - Morris
+    - Dr Morris
+- synonym: Gani Nashi
+  examples: |
+    - GN
+    - Dr GN
+    - Gani
+    - Dr Gani
+    - G Nashi
+    - Dr G Nashi
+    - Gani N
+    - Dr Gani N
+    - Nashi
+    - Dr Nashi
+- synonym: Bente Riegler
+  examples: |
+    - BR
+    - Dr BR
+    - Bente
+    - Dr Bente
+    - B Riegler
+    - Dr B Riegler
+    - Bente R
+    - Dr Bente R
+    - Riegler
+    - Dr Riegler
+- synonym: William Spring
+  examples: |
+    - WS
+    - Dr WS
+    - William
+    - Dr William
+    - W Spring
+    - Dr W Spring
+    - William S
+    - Dr William S
+    - Spring
+    - Dr Spring
+- synonym: Jan T Kim
+  examples: |
+    - JTK
+    - Dr JTK
+    - Jan
+    - Dr Jan
+    - Jan T
+    - Dr Jan T
+    - Jan Kim
+    - Dr Jan Kim
+    - Dr T
+    - T Jan
+    - Dr T Jan
+    - T Kim
+    - Dr T Kim
+    - Kim
+    - Dr Kim
+    - Kim Jan
+    - Dr Kim Jan
+    - Kim T
+    - Dr Kim T
+- synonym: Raiumend Kirner
+  examples: |
+    - RK
+    - Dr RK
+    - Raiumend
+    - Dr Raiumend
+    - R Kirner
+    - Dr R Kirner
+    - Raiumend K
+    - Dr Raiumend K
+    - Kirner
+    - Dr Kirner
+- synonym: Peter Lane
+  examples: |
+    - PL
+    - Dr PL
+    - Dr Peter
+    - P Lane
+    - Dr P Lane
+    - Peter L
+    - Dr Peter L
+    - Lane
+    - Dr Lane
+- synonym: Joseph Williams
+  examples: |
+    - JW
+    - Dr JW
+    - Joseph
+    - Dr Joseph
+    - J Williams
+    - Dr J Williams
+    - Joseph W
+    - Dr Joseph W
+    - Williams
+    - Dr Williams
+- synonym: Alexandra Marcyk
+  examples: |
+    - AM
+    - Dr AM
+    - Alexandra
+    - Dr Alexandra
+    - A Marcyk
+    - Dr A Marcyk
+    - Alexandra M
+    - Dr Alexandra M
+    - Marcyk
+    - Dr Marcyk
+- synonym: Athanasios Tsokonos
+  examples: |
+    - AT
+    - Dr AT
+    - Athanasios
+    - Dr Athanasios
+    - Dr Athanasios Tsokonos
+    - Tsokonos
+    - Dr Tsokonos
+    - Tsokonos Athanasios
+    - Dr Tsokonos Athanasios
+- synonym: Deepak Panday
+  examples: |
+    - DP
+    - Dr DP
+    - D Panday
+    - Dr D Panday
+    - Panday
+    - Dr Panday
+    - Deepak
+    - Dr Deepak
+    - Deepak P
+    - Dr Deepak P
+    - Depak
+    - Dr Depak
+    - Depak P
+    - Dr Depak P
+- synonym: Manjula Manjunthiah
+  examples: |
+    - MM
+    - Dr MM
+    - Manjula
+    - Dr Manjula
+    - M Manjunthiah
+    - Dr M Manjunthiah
+    - Manjula M
+    - Dr Manjula M
+    - Manjunthiah
+    - Dr Manjunthiah
+- synonym: Nathan Baddoo
+  examples: |
+    - NB
+    - Dr NB
+    - Nathan
+    - Dr Nathan
+    - N Baddoo
+    - Dr N Baddoo
+    - Nathan B
+    - Dr Nathan B
+    - Baddoo
+    - Dr Baddoo
+- synonym: Manal Helal
+  examples: |
+    - MH
+    - Dr MH
+    - Manal
+    - Dr Manal
+    - M Helal
+    - Dr M Helal
+    - Manal H
+    - Dr Manal H
+    - Helal
+    - Dr Helal
+- synonym: Volker Stueber
+  examples: |
+    - VS
+    - Dr VS
+    - Volker
+    - Dr Volker
+    - V Stueber
+    - Dr V Stueber
+    - Volker S
+    - Dr Volker S
+    - Stueber
+    - Dr Stueber
+- synonym: Daniel Polani
+  examples: |
+    - Daniel
+    - Dr Daniel
+    - D Polani
+    - Dr D Polani
+    - Daniel P
+    - Dr Daniel P
+    - Polani
+    - Dr Polani
+- synonym: Azita Pourgashm
+  examples: |
+    - AP
+    - Dr AP
+    - Azita
+    - Dr Azita
+    - A Pourgashm
+    - Dr A Pourgashm
+    - Azita P
+    - Dr Azita P
+    - Pourgashm
+    - Dr Pourgashm
+- synonym: Susan Attwood
+  examples: |
+    - SA
+    - Dr SA
+    - Susan
+    - Dr Susan
+    - S Attwood
+    - Dr S Attwood
+    - Susan A
+    - Dr Susan A
+    - Attwood
+    - Dr Attwood

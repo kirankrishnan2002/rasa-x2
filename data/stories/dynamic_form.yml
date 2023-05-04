@@ -1,0 +1,62 @@
+version: "2.0"
+stories:
+- story: Dynamic form Story
+  steps:
+  - action: dynamic_form
+  - active_loop: dynamic_form
+  - slot_was_set:
+    - requested_slot: question
+  - slot_was_set:
+    - dq_type: talents
+  - or:
+    - intent: deny
+    - intent: affirm
+  - action: dynamic_form
+  - slot_was_set:
+    - question: i dont have any talents
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_send_idle_message
+
+- story: Dynamic form Story
+  steps:
+  - action: dynamic_form
+  - active_loop: dynamic_form
+  - slot_was_set:
+    - requested_slot: question
+  - or:
+    - intent: deny
+    - intent: affirm
+  - action: dynamic_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_send_idle_message
+
+
+- story: Dynamic form Story
+  steps:
+  - action: dynamic_form
+  - active_loop: dynamic_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_send_idle_message
+
+- story: Interactive Story from Conversation ID 81200fcb85004dc9baaad987bc28956c
+  steps:
+  - action: dynamic_form
+  - active_loop: dynamic_form
+  - slot_was_set:
+    - requested_slot: question
+  - slot_was_set:
+    - dq_type: talents
+  - intent: deny
+  - action: dynamic_form
+  - slot_was_set:
+    - question: not really
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: action_send_idle_message

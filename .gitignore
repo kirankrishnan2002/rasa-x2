@@ -1,0 +1,10 @@
+models
+db0
+auth
+db
+certs
+logs
+#.config/rasa/
+./.config/*
+__pycache__
+local_files

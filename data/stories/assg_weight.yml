@@ -1,0 +1,41 @@
+version: "2.0"
+stories:
+- story: interactive_assg_weight_story
+  steps:
+  - intent: assg_weight
+  - action: module_form
+  - active_loop: module_form
+  - slot_was_set:
+    - requested_slot: module_code
+  - slot_was_set:
+    - module_code: 6com1031
+  - slot_was_set:
+    - db_id: '0'
+  - slot_was_set:
+    - module_name: Project Planning
+  - slot_was_set:
+    - module_leader: 'Paul Morris'
+  - slot_was_set:
+    - leader_email: p.m.morris@herts.ac.uk
+  - slot_was_set:
+    - credits: '15 credits '
+  - slot_was_set:
+    - assg: 3.0
+  - slot_was_set:
+    - assg_weight: "Assignment 1- 10%\nAssignment 2-40%\nAssignment 3- 50%"
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: actions_assg_weight
+  - action: action_send_idle_message
+
+- story: activate_assg_weight_form
+  steps:
+  - intent: assg_weight
+  - action: module_form
+  - active_loop: module_form
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: actions_assg_weight
+  - action: action_send_idle_message
